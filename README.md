@@ -23,6 +23,25 @@ Fechamentos de aeroportos por eventos climáticos (alagamentos, nevoeiro, tempes
 
 ## Como executar
 
+Requer Python 3.13 (instalador do [python.org](https://www.python.org/downloads/)).
+
+```bash
+# 1. criar e ativar o ambiente virtual
+py -3.13 -m venv .venv            # Linux/macOS: python3.13 -m venv .venv
+.venv\Scripts\activate            # Linux/macOS: source .venv/bin/activate
+
+# 2. instalar as dependências
+pip install -r requirements.txt
+
+# 3. baixar os dados da ANAC (cerca de 75 MB, vão para data/raw/)
+python scripts/baixar_dados.py
+
+# 4. construir a rede
+python scripts/construir_rede.py
+```
+
+Se o download falhar com `CERTIFICATE_VERIFY_FAILED`, o Python em uso não encontra os certificados raiz do sistema (acontece, por exemplo, com o Python do MSYS2). Crie o `.venv` com o Python do python.org.
+
 ## Resultados
 
 ## Limitações e próximos passos
