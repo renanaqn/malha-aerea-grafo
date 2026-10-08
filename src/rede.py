@@ -96,3 +96,14 @@ def construir_grafo(
     nx.set_node_attributes(G, {n: nomes.get(n, "") for n in G}, "nome")
     G.graph.update(inicio=inicio, fim=fim, limiar_semanal=limiar_semanal)
     return G
+
+
+def arestas_para_df(G: nx.DiGraph) -> pd.DataFrame:
+    """Tabela de arestas com origem, destino, voos e weight, ordenada por peso."""
+    df = nx.to_pandas_edgelist(G, source="origem", target="destino")
+    return df[["origem", "destino", "voos", "weight"]].sort_values("weight", ascending=False, ignore_index=True)
+
+
+def carregar_grafo(caminho: Path) -> nx.DiGraph:
+    """Carrega um grafo salvo em GraphML por scripts/construir_rede.py."""
+    return nx.read_graphml(caminho)

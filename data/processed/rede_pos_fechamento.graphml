@@ -1,0 +1,3697 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d4" for="edge" attr.name="voos" attr.type="long" />
+  <key id="d3" for="node" attr.name="nome" attr.type="string" />
+  <key id="d2" for="graph" attr.name="limiar_semanal" attr.type="double" />
+  <key id="d1" for="graph" attr.name="fim" attr.type="string" />
+  <key id="d0" for="graph" attr.name="inicio" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="SBAC">
+      <data key="d3">AEROPORTO DE ARACATI - ARACATI - CE - BRASIL</data>
+    </node>
+    <node id="SBFZ">
+      <data key="d3">PINTO MARTINS - FORTALEZA - CE - BRASIL</data>
+    </node>
+    <node id="SBAE">
+      <data key="d3">AEROPORTO ESTADUAL DE BAURU-AREALVA / MOUSSA NAKHL TOBIAS - AREALVA - SP - BRASIL</data>
+    </node>
+    <node id="SBKP">
+      <data key="d3">VIRACOPOS - CAMPINAS - SP - BRASIL</data>
+    </node>
+    <node id="SBPS">
+      <data key="d3">PORTO SEGURO - PORTO SEGURO - BA - BRASIL</data>
+    </node>
+    <node id="SBAR">
+      <data key="d3">SANTA MARIA - ARACAJU - SE - BRASIL</data>
+    </node>
+    <node id="SBBR">
+      <data key="d3">PRESIDENTE JUSCELINO KUBITSCHEK - BRASÍLIA - DF - BRASIL</data>
+    </node>
+    <node id="SBCF">
+      <data key="d3">TANCREDO NEVES - CONFINS - MG - BRASIL</data>
+    </node>
+    <node id="SBGL">
+      <data key="d3">AEROPORTO INTERNACIONAL DO RIO DE JANEIRO (GALEÃO) - ANTONIO CARLOS JOBIM - RIO DE JANEIRO - RJ - BRASIL</data>
+    </node>
+    <node id="SBGR">
+      <data key="d3">GUARULHOS - GOVERNADOR ANDRÉ FRANCO MONTORO - GUARULHOS - SP - BRASIL</data>
+    </node>
+    <node id="SBRF">
+      <data key="d3">GUARARAPES - GILBERTO FREYRE - RECIFE - PE - BRASIL</data>
+    </node>
+    <node id="SBSP">
+      <data key="d3">CONGONHAS - SÃO PAULO - SP - BRASIL</data>
+    </node>
+    <node id="SBAT">
+      <data key="d3">PILOTO OSVALDO MARQUES DIAS - ALTA FLORESTA - MT - BRASIL</data>
+    </node>
+    <node id="SBCY">
+      <data key="d3">MARECHAL RONDON - VÁRZEA GRANDE - MT - BRASIL</data>
+    </node>
+    <node id="SBAU">
+      <data key="d3">ESTADUAL DARIO GUARITA - ARAÇATUBA - SP - BRASIL</data>
+    </node>
+    <node id="SBAX">
+      <data key="d3">ROMEU ZEMA - ARAXÁ - MG - BRASIL</data>
+    </node>
+    <node id="SBUR">
+      <data key="d3">MÁRIO DE ALMEIDA FRANCO - UBERABA - MG - BRASIL</data>
+    </node>
+    <node id="SBBE">
+      <data key="d3">INTERNACIONAL DE BELÉM/VAL DE CANS/JÚLIO CEZAR RIBEIRO - BELÉM - PA - BRASIL</data>
+    </node>
+    <node id="SBBV">
+      <data key="d3">ATLAS BRASIL CANTANHEDE - BOA VISTA - RR - BRASIL</data>
+    </node>
+    <node id="SBCJ">
+      <data key="d3">CARAJÁS - PARAUAPEBAS - PA - BRASIL</data>
+    </node>
+    <node id="SBEG">
+      <data key="d3">EDUARDO GOMES - MANAUS - AM - BRASIL</data>
+    </node>
+    <node id="SBHT">
+      <data key="d3">ALTAMIRA - ALTAMIRA - PA - BRASIL</data>
+    </node>
+    <node id="SBMA">
+      <data key="d3">JOÃO CORREA DA ROCHA - MARABÁ - PA - BRASIL</data>
+    </node>
+    <node id="SBMD">
+      <data key="d3">MONTE DOURADO - ALMEIRIM - PA - BRASIL</data>
+    </node>
+    <node id="SBMQ">
+      <data key="d3">ALBERTO ALCOLUMBRE - MACAPÁ - AP - BRASIL</data>
+    </node>
+    <node id="SBSG">
+      <data key="d3">GOVERNADOR ALUIZIO ALVES - SÃO GONÇALO DO AMARANTE - RN - BRASIL</data>
+    </node>
+    <node id="SBSL">
+      <data key="d3">MARECHAL CUNHA MACHADO - SÃO LUÍS - MA - BRASIL</data>
+    </node>
+    <node id="SBSN">
+      <data key="d3">MAESTRO WILSON FONSECA - SANTARÉM - PA - BRASIL</data>
+    </node>
+    <node id="SBTU">
+      <data key="d3">TUCURUÍ - TUCURUÍ - PA - BRASIL</data>
+    </node>
+    <node id="SNEB">
+      <data key="d3">AERODROMO DE PARAGOMINAS - PARAGOMINAS - PA - BRASIL</data>
+    </node>
+    <node id="SNSM">
+      <data key="d3">SALINÓPOLIS - SALINÓPOLIS - PA - BRASIL</data>
+    </node>
+    <node id="SNVS">
+      <data key="d3">BREVES - BREVES - PA - BRASIL</data>
+    </node>
+    <node id="SBCG">
+      <data key="d3">CAMPO GRANDE - CAMPO GRANDE - MS - BRASIL</data>
+    </node>
+    <node id="SBCT">
+      <data key="d3">AFONSO PENA - SÃO JOSÉ DOS PINHAIS - PR - BRASIL</data>
+    </node>
+    <node id="SBFL">
+      <data key="d3">HERCÍLIO LUZ - FLORIANÓPOLIS - SC - BRASIL</data>
+    </node>
+    <node id="SBGO">
+      <data key="d3">SANTA GENOVEVA/GOIÂNIA - GOIÂNIA - GO - BRASIL</data>
+    </node>
+    <node id="SBIZ">
+      <data key="d3">PREFEITO RENATO MOREIRA - IMPERATRIZ - MA - BRASIL</data>
+    </node>
+    <node id="SBJP">
+      <data key="d3">PRESIDENTE CASTRO PINTO - SANTA RITA - PB - BRASIL</data>
+    </node>
+    <node id="SBJU">
+      <data key="d3">ORLANDO BEZERRA DE MENEZES - JUAZEIRO DO NORTE - CE - BRASIL</data>
+    </node>
+    <node id="SBMO">
+      <data key="d3">ZUMBI DOS PALMARES - RIO LARGO - AL - BRASIL</data>
+    </node>
+    <node id="SBPJ">
+      <data key="d3">BRIGADEIRO LYSIAS RODRIGUES - PALMAS - TO - BRASIL</data>
+    </node>
+    <node id="SBPV">
+      <data key="d3">GOVERNADOR JORGE TEIXEIRA DE OLIVEIRA - PORTO VELHO - RO - BRASIL</data>
+    </node>
+    <node id="SBRB">
+      <data key="d3">PLÁCIDO DE CASTRO - RIO BRANCO - AC - BRASIL</data>
+    </node>
+    <node id="SBRJ">
+      <data key="d3">SANTOS DUMONT - RIO DE JANEIRO - RJ - BRASIL</data>
+    </node>
+    <node id="SBSI">
+      <data key="d3">PRESIDENTE JOÃO BATISTA FIGUEIREDO - SINOP - MT - BRASIL</data>
+    </node>
+    <node id="SBSV">
+      <data key="d3">DEPUTADO LUÍS EDUARDO MAGALHÃES - SALVADOR - BA - BRASIL</data>
+    </node>
+    <node id="SBTE">
+      <data key="d3">SENADOR PETRÔNIO PORTELLA - TERESINA - PI - BRASIL</data>
+    </node>
+    <node id="SBVT">
+      <data key="d3">EURICO DE AGUIAR SALLES - VITÓRIA - ES - BRASIL</data>
+    </node>
+    <node id="SBBW">
+      <data key="d3">BARRA DO GARÇAS - BARRA DO GARÇAS - MT - BRASIL</data>
+    </node>
+    <node id="SBCA">
+      <data key="d3">ADALBERTO MENDES DA SILVA - CASCAVEL - PR - BRASIL</data>
+    </node>
+    <node id="SBCB">
+      <data key="d3">CABO FRIO - CABO FRIO - RJ - BRASIL</data>
+    </node>
+    <node id="SBCN">
+      <data key="d3">NELSON RODRIGUES GUIMARÃES - CALDAS NOVAS - GO - BRASIL</data>
+    </node>
+    <node id="SBFI">
+      <data key="d3">CATARATAS - FOZ DO IGUAÇU - PR - BRASIL</data>
+    </node>
+    <node id="SBGV">
+      <data key="d3">CORONEL ALTINO MACHADO - GOVERNADOR VALADARES - MG - BRASIL</data>
+    </node>
+    <node id="SBIL">
+      <data key="d3">BAHIA - JORGE AMADO - ILHÉUS - BA - BRASIL</data>
+    </node>
+    <node id="SBIP">
+      <data key="d3">USIMINAS - SANTANA DO PARAÍSO - MG - BRASIL</data>
+    </node>
+    <node id="SBJE">
+      <data key="d3">JERICOACORA - CRUZ - CE - BRASIL</data>
+    </node>
+    <node id="SBKG">
+      <data key="d3">PRESIDENTE JOÃO SUASSUNA - CAMPINA GRANDE - PB - BRASIL</data>
+    </node>
+    <node id="SBLE">
+      <data key="d3">HORÁCIO DE MATTOS - LENÇÓIS - BA - BRASIL</data>
+    </node>
+    <node id="SBMK">
+      <data key="d3">MÁRIO RIBEIRO - MONTES CLAROS - MG - BRASIL</data>
+    </node>
+    <node id="SBTC">
+      <data key="d3">HOTEL TRANSAMÉRICA(AERODROMO PRIVADO) - UNA - BA - BRASIL</data>
+    </node>
+    <node id="SBUL">
+      <data key="d3">TEN CEL AVIADOR CÉSAR BOMBONATO - UBERLÂNDIA - MG - BRASIL</data>
+    </node>
+    <node id="SBVC">
+      <data key="d3">GLAUBER DE ANDRADE ROCHA - VITÓRIA DA CONQUISTA - BA - BRASIL</data>
+    </node>
+    <node id="SBVG">
+      <data key="d3">MAJOR BRIGADEIRO TROMPOWSKY - VARGINHA - MG - BRASIL</data>
+    </node>
+    <node id="SBZM">
+      <data key="d3">REGIONAL DA ZONA DA MATA - GOIANÁ - MG - BRASIL</data>
+    </node>
+    <node id="SNBR">
+      <data key="d3">BARREIRAS - BARREIRAS - BA - BRASIL</data>
+    </node>
+    <node id="SNGI">
+      <data key="d3">GUANAMBI - GUANAMBI - BA - BRASIL</data>
+    </node>
+    <node id="SNJM">
+      <data key="d3">AEROPORTO ELIAS BREDER - MANHUAÇU - MG - BRASIL</data>
+    </node>
+    <node id="SNLN">
+      <data key="d3">AERÓDROMO MUNICIPAL DE LINHARES - LINHARES - ES - BRASIL</data>
+    </node>
+    <node id="SNPD">
+      <data key="d3">PATOS DE MINAS - PATOS DE MINAS - MG - BRASIL</data>
+    </node>
+    <node id="SNSS">
+      <data key="d3">SALINAS - SALINAS - MG - BRASIL</data>
+    </node>
+    <node id="SNTO">
+      <data key="d3">JUSCELINO KUBITSCHECK - TEÓFILO OTONI - MG - BRASIL</data>
+    </node>
+    <node id="SNZR">
+      <data key="d3">PARACATU - PARACATU - MG - BRASIL</data>
+    </node>
+    <node id="SBCH">
+      <data key="d3">SERAFIN ENOSS BERTASO - CHAPECÓ - SC - BRASIL</data>
+    </node>
+    <node id="SDOW">
+      <data key="d3">OURILÂNDIA DO NORTE - OURILÂNDIA DO NORTE - PA - BRASIL</data>
+    </node>
+    <node id="SBCO">
+      <data key="d3">CANOAS - CANOAS - RS - BRASIL</data>
+    </node>
+    <node id="SBCP">
+      <data key="d3">BARTOLOMEU LISANDRO - CAMPOS DOS GOYTACAZES - RJ - BRASIL</data>
+    </node>
+    <node id="SBCR">
+      <data key="d3">CORUMBÁ - CORUMBÁ - MS - BRASIL</data>
+    </node>
+    <node id="SBDB">
+      <data key="d3">BONITO - BONITO - MS - BRASIL</data>
+    </node>
+    <node id="SBLO">
+      <data key="d3">GOVERNADOR JOSÉ RICHA - LONDRINA - PR - BRASIL</data>
+    </node>
+    <node id="SBMG">
+      <data key="d3">SÍLVIO NAME JÚNIOR - MARINGÁ - PR - BRASIL</data>
+    </node>
+    <node id="SBPO">
+      <data key="d3">JUVENAL LOUREIRO CARDOSO - PATO BRANCO - PR - BRASIL</data>
+    </node>
+    <node id="SBUG">
+      <data key="d3">RUBEM BERTA - URUGUAIANA - RS - BRASIL</data>
+    </node>
+    <node id="SSGY">
+      <data key="d3">GUAÍRA - GUAÍRA - PR - BRASIL</data>
+    </node>
+    <node id="SSUM">
+      <data key="d3">ORLANDO DE CARVALHO - UMUARAMA - PR - BRASIL</data>
+    </node>
+    <node id="SSUV">
+      <data key="d3">JOSÉ CLETO - UNIÃO DA VITÓRIA - PR - BRASIL</data>
+    </node>
+    <node id="SSVL">
+      <data key="d3">TELÊMACO BORBA (SBTL*) - TELÊMACO BORBA - PR - BRASIL</data>
+    </node>
+    <node id="SBCX">
+      <data key="d3">REGIONAL HUGO CANTERGIANI - CAXIAS DO SUL - RS - BRASIL</data>
+    </node>
+    <node id="SBJI">
+      <data key="d3">JI-PARANÁ - JI-PARANÁ - RO - BRASIL</data>
+    </node>
+    <node id="SBSO">
+      <data key="d3">REGIONAL DE SORRISO ADOLINO BEDIN - SORRISO - MT - BRASIL</data>
+    </node>
+    <node id="SBVH">
+      <data key="d3">BRIGADEIRO CAMARÃO - VILHENA - RO - BRASIL</data>
+    </node>
+    <node id="SSKW">
+      <data key="d3">CACOAL - CACOAL - RO - BRASIL</data>
+    </node>
+    <node id="SSOU">
+      <data key="d3">ARIPUANÃ - ARIPUANÃ - MT - BRASIL</data>
+    </node>
+    <node id="SBCZ">
+      <data key="d3">CRUZEIRO DO SUL - CRUZEIRO DO SUL - AC - BRASIL</data>
+    </node>
+    <node id="SBDN">
+      <data key="d3">PRESIDENTE PRUDENTE - PRESIDENTE PRUDENTE - SP - BRASIL</data>
+    </node>
+    <node id="SBIH">
+      <data key="d3">ITAITUBA - ITAITUBA - PA - BRASIL</data>
+    </node>
+    <node id="SBMY">
+      <data key="d3">MANICORÉ - MANICORÉ - AM - BRASIL</data>
+    </node>
+    <node id="SBTB">
+      <data key="d3">TROMBETAS - ORIXIMINÁ - PA - BRASIL</data>
+    </node>
+    <node id="SBTF">
+      <data key="d3">TEFÉ - TEFÉ - AM - BRASIL</data>
+    </node>
+    <node id="SBTT">
+      <data key="d3">TABATINGA - TABATINGA - AM - BRASIL</data>
+    </node>
+    <node id="SBUA">
+      <data key="d3">SÃO GABRIEL DA CACHOEIRA - SÃO GABRIEL DA CACHOEIRA - AM - BRASIL</data>
+    </node>
+    <node id="SWBC">
+      <data key="d3">BARCELOS - BARCELOS - AM - BRASIL</data>
+    </node>
+    <node id="SWBR">
+      <data key="d3">BORBA - BORBA - AM - BRASIL</data>
+    </node>
+    <node id="SWEI">
+      <data key="d3">EIRUNEPÉ - EIRUNEPÉ - AM - BRASIL</data>
+    </node>
+    <node id="SWKO">
+      <data key="d3">COARI - COARI - AM - BRASIL</data>
+    </node>
+    <node id="SWLB">
+      <data key="d3">LÁBREA - LÁBREA - AM - BRASIL</data>
+    </node>
+    <node id="SWMW">
+      <data key="d3">MAUÉS - MAUÉS - AM - BRASIL</data>
+    </node>
+    <node id="SWPI">
+      <data key="d3">JÚLIO BÉLEM - PARINTINS - AM - BRASIL</data>
+    </node>
+    <node id="SWYN">
+      <data key="d3">PRAINHA - APUÍ - AM - BRASIL</data>
+    </node>
+    <node id="SBPK">
+      <data key="d3">PELOTAS - PELOTAS - RS - BRASIL</data>
+    </node>
+    <node id="SBSM">
+      <data key="d3">SANTA MARIA - SANTA MARIA - RS - BRASIL</data>
+    </node>
+    <node id="SBFN">
+      <data key="d3">FERNANDO DE NORONHA - FERNANDO DE NORONHA - PE - BRASIL</data>
+    </node>
+    <node id="SBMS">
+      <data key="d3">DIX-SEPT ROSADO - MOSSORÓ - RN - BRASIL</data>
+    </node>
+    <node id="SN6L">
+      <data key="d3">VIRGÍLIO TÁVORA - SOBRAL - CE - BRASIL</data>
+    </node>
+    <node id="SNIG">
+      <data key="d3">IGUATU - IGUATU - CE - BRASIL</data>
+    </node>
+    <node id="SBNF">
+      <data key="d3">MINISTRO VICTOR KONDER - NAVEGANTES - SC - BRASIL</data>
+    </node>
+    <node id="SBSJ">
+      <data key="d3">PROFESSOR URBANO ERNESTO STUMPF - SÃO JOSÉ DOS CAMPOS - SP - BRASIL</data>
+    </node>
+    <node id="SBJA">
+      <data key="d3">REGIONAL SUL - JAGUARUNA - SC - BRASIL</data>
+    </node>
+    <node id="SBJV">
+      <data key="d3">LAURO CARNEIRO DE LOYOLA - JOINVILLE - SC - BRASIL</data>
+    </node>
+    <node id="SBNM">
+      <data key="d3">SANTO ÂNGELO - SANTO ÂNGELO - RS - BRASIL</data>
+    </node>
+    <node id="SBPF">
+      <data key="d3">LAURO KURTZ - PASSO FUNDO - RS - BRASIL</data>
+    </node>
+    <node id="SBPL">
+      <data key="d3">SENADOR NILO COELHO - PETROLINA - PE - BRASIL</data>
+    </node>
+    <node id="SBRP">
+      <data key="d3">LEITE LOPES - RIBEIRÃO PRETO - SP - BRASIL</data>
+    </node>
+    <node id="SBSR">
+      <data key="d3">PROFESSOR ERIBERTO MANOEL REINO - SÃO JOSÉ DO RIO PRETO - SP - BRASIL</data>
+    </node>
+    <node id="SWLC">
+      <data key="d3">GENERAL LEITE DE CASTRO - RIO VERDE - GO - BRASIL</data>
+    </node>
+    <node id="SBPB">
+      <data key="d3">AEROPORTO INTERNACIONAL DE PARNAÍBA / PREFEITO DOUTOR JOÃO SILVA FILHO - PARNAÍBA - PI - BRASIL</data>
+    </node>
+    <node id="SBJR">
+      <data key="d3">JACAREPAGUÁ - RIO DE JANEIRO - RJ - BRASIL</data>
+    </node>
+    <node id="SBML">
+      <data key="d3">FRANK MILOYE MILENKOVICH - MARÍLIA - SP - BRASIL</data>
+    </node>
+    <node id="SBPG">
+      <data key="d3">COMANDANTE ANTONIO AMILTON BERALDO - PONTA GROSSA - PR - BRASIL</data>
+    </node>
+    <node id="SBPP">
+      <data key="d3">PONTA PORÃ - PONTA PORÃ - MS - BRASIL</data>
+    </node>
+    <node id="SBRD">
+      <data key="d3">RONDONÓPOLIS - RONDONÓPOLIS - MT - BRASIL</data>
+    </node>
+    <node id="SBTG">
+      <data key="d3">TRÊS LAGOAS - TRÊS LAGOAS - MS - BRASIL</data>
+    </node>
+    <node id="SNCP">
+      <data key="d3">AEROPORTO REGIONAL DO PLANALTO SERRANO - CORREIA PINTO - SC - BRASIL</data>
+    </node>
+    <node id="SSGG">
+      <data key="d3">Tancredo Thomas de Faria - GUARAPUAVA - PR - BRASIL</data>
+    </node>
+    <node id="SNYA">
+      <data key="d3">ALMEIRIM - ALMEIRIM - PA - BRASIL</data>
+    </node>
+    <node id="SSRS">
+      <data key="d3">BARREIRINHAS - BARREIRINHAS - MA - BRASIL</data>
+    </node>
+    <node id="SBUF">
+      <data key="d3">PAULO AFONSO - PAULO AFONSO - BA - BRASIL</data>
+    </node>
+    <node id="SDIY">
+      <data key="d3">JOÃO DURVAL CARNEIRO - FEIRA DE SANTANA - BA - BRASIL</data>
+    </node>
+    <node id="SJZA">
+      <data key="d3">PEDRO VIEIRA MOREIRA - CAJAZEIRAS - PB - BRASIL</data>
+    </node>
+    <node id="SNAB">
+      <data key="d3">ARARIPINA - ARARIPINA - PE - BRASIL</data>
+    </node>
+    <node id="SNGN">
+      <data key="d3">GARANHUNS - GARANHUNS - PE - BRASIL</data>
+    </node>
+    <node id="SNHS">
+      <data key="d3">SANTA MAGALHÃES - SERRA TALHADA - PE - BRASIL</data>
+    </node>
+    <node id="SNRU">
+      <data key="d3">OSCAR LARANJEIRAS - CARUARU - PE - BRASIL</data>
+    </node>
+    <node id="SNTS">
+      <data key="d3">PEREGRINO FILHO - PATOS - PB - BRASIL</data>
+    </node>
+    <node id="SWKQ">
+      <data key="d3">SERRA DA CAPIVARA/SÃO RAIMUNDO NONATO - SÃO RAIMUNDO NONATO - PI - BRASIL</data>
+    </node>
+    <node id="SNCL">
+      <data key="d3">LORENZO - CAIRU - BA - BRASIL</data>
+    </node>
+    <node id="SNOX">
+      <data key="d3">ORIXIMINÁ - ORIXIMINÁ - PA - BRASIL</data>
+    </node>
+    <node id="SWBE">
+      <data key="d3">WALFRIDO SAMITO DE ALMEIDA - SÃO BENEDITO - CE - BRASIL</data>
+    </node>
+    <node id="SNWS">
+      <data key="d3">DOUTOR LÚCIO LIMA - CRATEÚS - CE - BRASIL</data>
+    </node>
+    <node id="SNMA">
+      <data key="d3">MONTE ALEGRE - MONTE ALEGRE - PA - BRASIL</data>
+    </node>
+    <node id="SNMZ">
+      <data key="d3">PORTO DE MOZ - PORTO DE MOZ - PA - BRASIL</data>
+    </node>
+    <node id="SWJN">
+      <data key="d3">JUÍNA - JUÍNA - MT - BRASIL</data>
+    </node>
+    <node id="SWTP">
+      <data key="d3">SANTA IZABEL DO RIO NEGRO - SANTA ISABEL DO RIO NEGRO - AM - BRASIL</data>
+    </node>
+    <edge source="SBAC" target="SBFZ">
+      <data key="d4">13</data>
+      <data key="d5">1.5689655172413792</data>
+    </edge>
+    <edge source="SBFZ" target="SBAC">
+      <data key="d4">13</data>
+      <data key="d5">1.5689655172413792</data>
+    </edge>
+    <edge source="SBFZ" target="SBBE">
+      <data key="d4">164</data>
+      <data key="d5">19.79310344827586</data>
+    </edge>
+    <edge source="SBFZ" target="SBBR">
+      <data key="d4">280</data>
+      <data key="d5">33.79310344827586</data>
+    </edge>
+    <edge source="SBFZ" target="SBCF">
+      <data key="d4">61</data>
+      <data key="d5">7.362068965517241</data>
+    </edge>
+    <edge source="SBFZ" target="SBEG">
+      <data key="d4">67</data>
+      <data key="d5">8.086206896551724</data>
+    </edge>
+    <edge source="SBFZ" target="SBFN">
+      <data key="d4">27</data>
+      <data key="d5">3.258620689655172</data>
+    </edge>
+    <edge source="SBFZ" target="SBGL">
+      <data key="d4">278</data>
+      <data key="d5">33.55172413793103</data>
+    </edge>
+    <edge source="SBFZ" target="SBGR">
+      <data key="d4">544</data>
+      <data key="d5">65.6551724137931</data>
+    </edge>
+    <edge source="SBFZ" target="SBJE">
+      <data key="d4">25</data>
+      <data key="d5">3.0172413793103448</data>
+    </edge>
+    <edge source="SBFZ" target="SBJU">
+      <data key="d4">91</data>
+      <data key="d5">10.982758620689655</data>
+    </edge>
+    <edge source="SBFZ" target="SBKG">
+      <data key="d4">70</data>
+      <data key="d5">8.448275862068964</data>
+    </edge>
+    <edge source="SBFZ" target="SBKP">
+      <data key="d4">91</data>
+      <data key="d5">10.982758620689655</data>
+    </edge>
+    <edge source="SBFZ" target="SBMS">
+      <data key="d4">29</data>
+      <data key="d5">3.4999999999999996</data>
+    </edge>
+    <edge source="SBFZ" target="SBRF">
+      <data key="d4">324</data>
+      <data key="d5">39.103448275862064</data>
+    </edge>
+    <edge source="SBFZ" target="SBSG">
+      <data key="d4">65</data>
+      <data key="d5">7.844827586206896</data>
+    </edge>
+    <edge source="SBFZ" target="SBSL">
+      <data key="d4">59</data>
+      <data key="d5">7.120689655172413</data>
+    </edge>
+    <edge source="SBFZ" target="SBSP">
+      <data key="d4">273</data>
+      <data key="d5">32.94827586206896</data>
+    </edge>
+    <edge source="SBFZ" target="SBSV">
+      <data key="d4">185</data>
+      <data key="d5">22.327586206896548</data>
+    </edge>
+    <edge source="SBFZ" target="SBTE">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBFZ" target="SBUL">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBFZ" target="SN6L">
+      <data key="d4">10</data>
+      <data key="d5">1.206896551724138</data>
+    </edge>
+    <edge source="SBFZ" target="SNIG">
+      <data key="d4">12</data>
+      <data key="d5">1.4482758620689653</data>
+    </edge>
+    <edge source="SBAE" target="SBKP">
+      <data key="d4">149</data>
+      <data key="d5">17.982758620689655</data>
+    </edge>
+    <edge source="SBAE" target="SBPS">
+      <data key="d4">8</data>
+      <data key="d5">0.9655172413793103</data>
+    </edge>
+    <edge source="SBKP" target="SBAE">
+      <data key="d4">148</data>
+      <data key="d5">17.86206896551724</data>
+    </edge>
+    <edge source="SBKP" target="SBAR">
+      <data key="d4">52</data>
+      <data key="d5">6.275862068965517</data>
+    </edge>
+    <edge source="SBKP" target="SBAU">
+      <data key="d4">101</data>
+      <data key="d5">12.189655172413792</data>
+    </edge>
+    <edge source="SBKP" target="SBBE">
+      <data key="d4">177</data>
+      <data key="d5">21.36206896551724</data>
+    </edge>
+    <edge source="SBKP" target="SBBR">
+      <data key="d4">419</data>
+      <data key="d5">50.568965517241374</data>
+    </edge>
+    <edge source="SBKP" target="SBBV">
+      <data key="d4">8</data>
+      <data key="d5">0.9655172413793103</data>
+    </edge>
+    <edge source="SBKP" target="SBCA">
+      <data key="d4">107</data>
+      <data key="d5">12.913793103448274</data>
+    </edge>
+    <edge source="SBKP" target="SBCF">
+      <data key="d4">610</data>
+      <data key="d5">73.62068965517241</data>
+    </edge>
+    <edge source="SBKP" target="SBCG">
+      <data key="d4">203</data>
+      <data key="d5">24.499999999999996</data>
+    </edge>
+    <edge source="SBKP" target="SBCH">
+      <data key="d4">128</data>
+      <data key="d5">15.448275862068964</data>
+    </edge>
+    <edge source="SBKP" target="SBCO">
+      <data key="d4">59</data>
+      <data key="d5">7.120689655172413</data>
+    </edge>
+    <edge source="SBKP" target="SBCP">
+      <data key="d4">52</data>
+      <data key="d5">6.275862068965517</data>
+    </edge>
+    <edge source="SBKP" target="SBCR">
+      <data key="d4">32</data>
+      <data key="d5">3.862068965517241</data>
+    </edge>
+    <edge source="SBKP" target="SBCT">
+      <data key="d4">456</data>
+      <data key="d5">55.03448275862068</data>
+    </edge>
+    <edge source="SBKP" target="SBCX">
+      <data key="d4">52</data>
+      <data key="d5">6.275862068965517</data>
+    </edge>
+    <edge source="SBKP" target="SBCY">
+      <data key="d4">255</data>
+      <data key="d5">30.775862068965516</data>
+    </edge>
+    <edge source="SBKP" target="SBDN">
+      <data key="d4">168</data>
+      <data key="d5">20.275862068965516</data>
+    </edge>
+    <edge source="SBKP" target="SBEG">
+      <data key="d4">177</data>
+      <data key="d5">21.36206896551724</data>
+    </edge>
+    <edge source="SBKP" target="SBFI">
+      <data key="d4">112</data>
+      <data key="d5">13.517241379310343</data>
+    </edge>
+    <edge source="SBKP" target="SBFL">
+      <data key="d4">337</data>
+      <data key="d5">40.672413793103445</data>
+    </edge>
+    <edge source="SBKP" target="SBFZ">
+      <data key="d4">91</data>
+      <data key="d5">10.982758620689655</data>
+    </edge>
+    <edge source="SBKP" target="SBGL">
+      <data key="d4">361</data>
+      <data key="d5">43.568965517241374</data>
+    </edge>
+    <edge source="SBKP" target="SBGO">
+      <data key="d4">236</data>
+      <data key="d5">28.48275862068965</data>
+    </edge>
+    <edge source="SBKP" target="SBIL">
+      <data key="d4">57</data>
+      <data key="d5">6.879310344827585</data>
+    </edge>
+    <edge source="SBKP" target="SBJA">
+      <data key="d4">44</data>
+      <data key="d5">5.310344827586206</data>
+    </edge>
+    <edge source="SBKP" target="SBJP">
+      <data key="d4">43</data>
+      <data key="d5">5.189655172413793</data>
+    </edge>
+    <edge source="SBKP" target="SBJR">
+      <data key="d4">42</data>
+      <data key="d5">5.068965517241379</data>
+    </edge>
+    <edge source="SBKP" target="SBJU">
+      <data key="d4">28</data>
+      <data key="d5">3.379310344827586</data>
+    </edge>
+    <edge source="SBKP" target="SBJV">
+      <data key="d4">161</data>
+      <data key="d5">19.43103448275862</data>
+    </edge>
+    <edge source="SBKP" target="SBLO">
+      <data key="d4">205</data>
+      <data key="d5">24.741379310344826</data>
+    </edge>
+    <edge source="SBKP" target="SBMG">
+      <data key="d4">143</data>
+      <data key="d5">17.25862068965517</data>
+    </edge>
+    <edge source="SBKP" target="SBML">
+      <data key="d4">94</data>
+      <data key="d5">11.344827586206895</data>
+    </edge>
+    <edge source="SBKP" target="SBMO">
+      <data key="d4">74</data>
+      <data key="d5">8.93103448275862</data>
+    </edge>
+    <edge source="SBKP" target="SBNF">
+      <data key="d4">246</data>
+      <data key="d5">29.68965517241379</data>
+    </edge>
+    <edge source="SBKP" target="SBNM">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBKP" target="SBPF">
+      <data key="d4">57</data>
+      <data key="d5">6.879310344827585</data>
+    </edge>
+    <edge source="SBKP" target="SBPG">
+      <data key="d4">30</data>
+      <data key="d5">3.6206896551724133</data>
+    </edge>
+    <edge source="SBKP" target="SBPJ">
+      <data key="d4">41</data>
+      <data key="d5">4.948275862068965</data>
+    </edge>
+    <edge source="SBKP" target="SBPK">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBKP" target="SBPL">
+      <data key="d4">51</data>
+      <data key="d5">6.155172413793103</data>
+    </edge>
+    <edge source="SBKP" target="SBPP">
+      <data key="d4">33</data>
+      <data key="d5">3.982758620689655</data>
+    </edge>
+    <edge source="SBKP" target="SBPS">
+      <data key="d4">68</data>
+      <data key="d5">8.206896551724137</data>
+    </edge>
+    <edge source="SBKP" target="SBRD">
+      <data key="d4">37</data>
+      <data key="d5">4.46551724137931</data>
+    </edge>
+    <edge source="SBKP" target="SBRF">
+      <data key="d4">351</data>
+      <data key="d5">42.36206896551724</data>
+    </edge>
+    <edge source="SBKP" target="SBRJ">
+      <data key="d4">478</data>
+      <data key="d5">57.68965517241379</data>
+    </edge>
+    <edge source="SBKP" target="SBRP">
+      <data key="d4">254</data>
+      <data key="d5">30.6551724137931</data>
+    </edge>
+    <edge source="SBKP" target="SBSG">
+      <data key="d4">68</data>
+      <data key="d5">8.206896551724137</data>
+    </edge>
+    <edge source="SBKP" target="SBSI">
+      <data key="d4">49</data>
+      <data key="d5">5.913793103448275</data>
+    </edge>
+    <edge source="SBKP" target="SBSL">
+      <data key="d4">46</data>
+      <data key="d5">5.551724137931034</data>
+    </edge>
+    <edge source="SBKP" target="SBSM">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBKP" target="SBSR">
+      <data key="d4">259</data>
+      <data key="d5">31.25862068965517</data>
+    </edge>
+    <edge source="SBKP" target="SBSV">
+      <data key="d4">284</data>
+      <data key="d5">34.275862068965516</data>
+    </edge>
+    <edge source="SBKP" target="SBTE">
+      <data key="d4">43</data>
+      <data key="d5">5.189655172413793</data>
+    </edge>
+    <edge source="SBKP" target="SBTG">
+      <data key="d4">44</data>
+      <data key="d5">5.310344827586206</data>
+    </edge>
+    <edge source="SBKP" target="SBUL">
+      <data key="d4">185</data>
+      <data key="d5">22.327586206896548</data>
+    </edge>
+    <edge source="SBKP" target="SBVT">
+      <data key="d4">208</data>
+      <data key="d5">25.103448275862068</data>
+    </edge>
+    <edge source="SBKP" target="SBZM">
+      <data key="d4">69</data>
+      <data key="d5">8.327586206896552</data>
+    </edge>
+    <edge source="SBKP" target="SNCP">
+      <data key="d4">32</data>
+      <data key="d5">3.862068965517241</data>
+    </edge>
+    <edge source="SBKP" target="SSGG">
+      <data key="d4">29</data>
+      <data key="d5">3.4999999999999996</data>
+    </edge>
+    <edge source="SBKP" target="SWLC">
+      <data key="d4">60</data>
+      <data key="d5">7.2413793103448265</data>
+    </edge>
+    <edge source="SBPS" target="SBAE">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBPS" target="SBBR">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBPS" target="SBCF">
+      <data key="d4">211</data>
+      <data key="d5">25.46551724137931</data>
+    </edge>
+    <edge source="SBPS" target="SBDN">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBPS" target="SBGL">
+      <data key="d4">59</data>
+      <data key="d5">7.120689655172413</data>
+    </edge>
+    <edge source="SBPS" target="SBGO">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBPS" target="SBGR">
+      <data key="d4">272</data>
+      <data key="d5">32.82758620689655</data>
+    </edge>
+    <edge source="SBPS" target="SBKP">
+      <data key="d4">68</data>
+      <data key="d5">8.206896551724137</data>
+    </edge>
+    <edge source="SBPS" target="SBMK">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBPS" target="SBRP">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBPS" target="SBSP">
+      <data key="d4">189</data>
+      <data key="d5">22.810344827586206</data>
+    </edge>
+    <edge source="SBPS" target="SBSR">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBPS" target="SBSV">
+      <data key="d4">31</data>
+      <data key="d5">3.7413793103448274</data>
+    </edge>
+    <edge source="SBPS" target="SBUL">
+      <data key="d4">10</data>
+      <data key="d5">1.206896551724138</data>
+    </edge>
+    <edge source="SBPS" target="SBVT">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBAR" target="SBBR">
+      <data key="d4">56</data>
+      <data key="d5">6.758620689655172</data>
+    </edge>
+    <edge source="SBAR" target="SBCF">
+      <data key="d4">39</data>
+      <data key="d5">4.706896551724138</data>
+    </edge>
+    <edge source="SBAR" target="SBGL">
+      <data key="d4">49</data>
+      <data key="d5">5.913793103448275</data>
+    </edge>
+    <edge source="SBAR" target="SBGR">
+      <data key="d4">301</data>
+      <data key="d5">36.32758620689655</data>
+    </edge>
+    <edge source="SBAR" target="SBKP">
+      <data key="d4">51</data>
+      <data key="d5">6.155172413793103</data>
+    </edge>
+    <edge source="SBAR" target="SBRF">
+      <data key="d4">190</data>
+      <data key="d5">22.93103448275862</data>
+    </edge>
+    <edge source="SBAR" target="SBSP">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBBR" target="SBAR">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBBR" target="SBBE">
+      <data key="d4">254</data>
+      <data key="d5">30.6551724137931</data>
+    </edge>
+    <edge source="SBBR" target="SBBV">
+      <data key="d4">139</data>
+      <data key="d5">16.775862068965516</data>
+    </edge>
+    <edge source="SBBR" target="SBCF">
+      <data key="d4">470</data>
+      <data key="d5">56.72413793103448</data>
+    </edge>
+    <edge source="SBBR" target="SBCG">
+      <data key="d4">116</data>
+      <data key="d5">13.999999999999998</data>
+    </edge>
+    <edge source="SBBR" target="SBCT">
+      <data key="d4">199</data>
+      <data key="d5">24.01724137931034</data>
+    </edge>
+    <edge source="SBBR" target="SBCY">
+      <data key="d4">203</data>
+      <data key="d5">24.499999999999996</data>
+    </edge>
+    <edge source="SBBR" target="SBEG">
+      <data key="d4">222</data>
+      <data key="d5">26.79310344827586</data>
+    </edge>
+    <edge source="SBBR" target="SBFL">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBBR" target="SBFZ">
+      <data key="d4">279</data>
+      <data key="d5">33.672413793103445</data>
+    </edge>
+    <edge source="SBBR" target="SBGL">
+      <data key="d4">180</data>
+      <data key="d5">21.72413793103448</data>
+    </edge>
+    <edge source="SBBR" target="SBGO">
+      <data key="d4">133</data>
+      <data key="d5">16.051724137931032</data>
+    </edge>
+    <edge source="SBBR" target="SBGR">
+      <data key="d4">572</data>
+      <data key="d5">69.03448275862068</data>
+    </edge>
+    <edge source="SBBR" target="SBIZ">
+      <data key="d4">44</data>
+      <data key="d5">5.310344827586206</data>
+    </edge>
+    <edge source="SBBR" target="SBJP">
+      <data key="d4">127</data>
+      <data key="d5">15.32758620689655</data>
+    </edge>
+    <edge source="SBBR" target="SBJU">
+      <data key="d4">35</data>
+      <data key="d5">4.224137931034482</data>
+    </edge>
+    <edge source="SBBR" target="SBKP">
+      <data key="d4">419</data>
+      <data key="d5">50.568965517241374</data>
+    </edge>
+    <edge source="SBBR" target="SBMA">
+      <data key="d4">82</data>
+      <data key="d5">9.89655172413793</data>
+    </edge>
+    <edge source="SBBR" target="SBMO">
+      <data key="d4">124</data>
+      <data key="d5">14.96551724137931</data>
+    </edge>
+    <edge source="SBBR" target="SBMQ">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBBR" target="SBPJ">
+      <data key="d4">137</data>
+      <data key="d5">16.534482758620687</data>
+    </edge>
+    <edge source="SBBR" target="SBPS">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBBR" target="SBPV">
+      <data key="d4">112</data>
+      <data key="d5">13.517241379310343</data>
+    </edge>
+    <edge source="SBBR" target="SBRB">
+      <data key="d4">167</data>
+      <data key="d5">20.155172413793103</data>
+    </edge>
+    <edge source="SBBR" target="SBRF">
+      <data key="d4">345</data>
+      <data key="d5">41.637931034482754</data>
+    </edge>
+    <edge source="SBBR" target="SBRJ">
+      <data key="d4">543</data>
+      <data key="d5">65.53448275862068</data>
+    </edge>
+    <edge source="SBBR" target="SBSG">
+      <data key="d4">140</data>
+      <data key="d5">16.89655172413793</data>
+    </edge>
+    <edge source="SBBR" target="SBSI">
+      <data key="d4">24</data>
+      <data key="d5">2.8965517241379306</data>
+    </edge>
+    <edge source="SBBR" target="SBSL">
+      <data key="d4">130</data>
+      <data key="d5">15.689655172413792</data>
+    </edge>
+    <edge source="SBBR" target="SBSN">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBBR" target="SBSP">
+      <data key="d4">1602</data>
+      <data key="d5">193.3448275862069</data>
+    </edge>
+    <edge source="SBBR" target="SBSV">
+      <data key="d4">304</data>
+      <data key="d5">36.68965517241379</data>
+    </edge>
+    <edge source="SBBR" target="SBTE">
+      <data key="d4">167</data>
+      <data key="d5">20.155172413793103</data>
+    </edge>
+    <edge source="SBBR" target="SBVT">
+      <data key="d4">108</data>
+      <data key="d5">13.034482758620689</data>
+    </edge>
+    <edge source="SBCF" target="SBAR">
+      <data key="d4">40</data>
+      <data key="d5">4.827586206896552</data>
+    </edge>
+    <edge source="SBCF" target="SBAX">
+      <data key="d4">32</data>
+      <data key="d5">3.862068965517241</data>
+    </edge>
+    <edge source="SBCF" target="SBBE">
+      <data key="d4">132</data>
+      <data key="d5">15.93103448275862</data>
+    </edge>
+    <edge source="SBCF" target="SBBR">
+      <data key="d4">472</data>
+      <data key="d5">56.9655172413793</data>
+    </edge>
+    <edge source="SBCF" target="SBCB">
+      <data key="d4">56</data>
+      <data key="d5">6.758620689655172</data>
+    </edge>
+    <edge source="SBCF" target="SBCJ">
+      <data key="d4">72</data>
+      <data key="d5">8.689655172413792</data>
+    </edge>
+    <edge source="SBCF" target="SBCN">
+      <data key="d4">16</data>
+      <data key="d5">1.9310344827586206</data>
+    </edge>
+    <edge source="SBCF" target="SBCT">
+      <data key="d4">92</data>
+      <data key="d5">11.103448275862068</data>
+    </edge>
+    <edge source="SBCF" target="SBCY">
+      <data key="d4">97</data>
+      <data key="d5">11.706896551724137</data>
+    </edge>
+    <edge source="SBCF" target="SBFI">
+      <data key="d4">8</data>
+      <data key="d5">0.9655172413793103</data>
+    </edge>
+    <edge source="SBCF" target="SBFL">
+      <data key="d4">62</data>
+      <data key="d5">7.482758620689655</data>
+    </edge>
+    <edge source="SBCF" target="SBFZ">
+      <data key="d4">60</data>
+      <data key="d5">7.2413793103448265</data>
+    </edge>
+    <edge source="SBCF" target="SBGL">
+      <data key="d4">464</data>
+      <data key="d5">55.99999999999999</data>
+    </edge>
+    <edge source="SBCF" target="SBGO">
+      <data key="d4">190</data>
+      <data key="d5">22.93103448275862</data>
+    </edge>
+    <edge source="SBCF" target="SBGR">
+      <data key="d4">778</data>
+      <data key="d5">93.89655172413792</data>
+    </edge>
+    <edge source="SBCF" target="SBGV">
+      <data key="d4">120</data>
+      <data key="d5">14.482758620689653</data>
+    </edge>
+    <edge source="SBCF" target="SBIL">
+      <data key="d4">65</data>
+      <data key="d5">7.844827586206896</data>
+    </edge>
+    <edge source="SBCF" target="SBIP">
+      <data key="d4">174</data>
+      <data key="d5">20.999999999999996</data>
+    </edge>
+    <edge source="SBCF" target="SBIZ">
+      <data key="d4">35</data>
+      <data key="d5">4.224137931034482</data>
+    </edge>
+    <edge source="SBCF" target="SBJE">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBCF" target="SBJP">
+      <data key="d4">38</data>
+      <data key="d5">4.586206896551723</data>
+    </edge>
+    <edge source="SBCF" target="SBKG">
+      <data key="d4">54</data>
+      <data key="d5">6.517241379310344</data>
+    </edge>
+    <edge source="SBCF" target="SBKP">
+      <data key="d4">596</data>
+      <data key="d5">71.93103448275862</data>
+    </edge>
+    <edge source="SBCF" target="SBLE">
+      <data key="d4">16</data>
+      <data key="d5">1.9310344827586206</data>
+    </edge>
+    <edge source="SBCF" target="SBMA">
+      <data key="d4">48</data>
+      <data key="d5">5.793103448275861</data>
+    </edge>
+    <edge source="SBCF" target="SBMK">
+      <data key="d4">240</data>
+      <data key="d5">28.965517241379306</data>
+    </edge>
+    <edge source="SBCF" target="SBMO">
+      <data key="d4">98</data>
+      <data key="d5">11.82758620689655</data>
+    </edge>
+    <edge source="SBCF" target="SBPJ">
+      <data key="d4">32</data>
+      <data key="d5">3.862068965517241</data>
+    </edge>
+    <edge source="SBCF" target="SBPS">
+      <data key="d4">211</data>
+      <data key="d5">25.46551724137931</data>
+    </edge>
+    <edge source="SBCF" target="SBPV">
+      <data key="d4">56</data>
+      <data key="d5">6.758620689655172</data>
+    </edge>
+    <edge source="SBCF" target="SBRF">
+      <data key="d4">277</data>
+      <data key="d5">33.43103448275862</data>
+    </edge>
+    <edge source="SBCF" target="SBRJ">
+      <data key="d4">283</data>
+      <data key="d5">34.1551724137931</data>
+    </edge>
+    <edge source="SBCF" target="SBSG">
+      <data key="d4">67</data>
+      <data key="d5">8.086206896551724</data>
+    </edge>
+    <edge source="SBCF" target="SBSL">
+      <data key="d4">52</data>
+      <data key="d5">6.275862068965517</data>
+    </edge>
+    <edge source="SBCF" target="SBSP">
+      <data key="d4">1509</data>
+      <data key="d5">182.12068965517238</data>
+    </edge>
+    <edge source="SBCF" target="SBSV">
+      <data key="d4">329</data>
+      <data key="d5">39.706896551724135</data>
+    </edge>
+    <edge source="SBCF" target="SBTC">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBCF" target="SBTE">
+      <data key="d4">29</data>
+      <data key="d5">3.4999999999999996</data>
+    </edge>
+    <edge source="SBCF" target="SBUL">
+      <data key="d4">232</data>
+      <data key="d5">27.999999999999996</data>
+    </edge>
+    <edge source="SBCF" target="SBUR">
+      <data key="d4">51</data>
+      <data key="d5">6.155172413793103</data>
+    </edge>
+    <edge source="SBCF" target="SBVC">
+      <data key="d4">49</data>
+      <data key="d5">5.913793103448275</data>
+    </edge>
+    <edge source="SBCF" target="SBVG">
+      <data key="d4">46</data>
+      <data key="d5">5.551724137931034</data>
+    </edge>
+    <edge source="SBCF" target="SBVT">
+      <data key="d4">274</data>
+      <data key="d5">33.068965517241374</data>
+    </edge>
+    <edge source="SBCF" target="SBZM">
+      <data key="d4">44</data>
+      <data key="d5">5.310344827586206</data>
+    </edge>
+    <edge source="SBCF" target="SNBR">
+      <data key="d4">88</data>
+      <data key="d5">10.620689655172413</data>
+    </edge>
+    <edge source="SBCF" target="SNGI">
+      <data key="d4">54</data>
+      <data key="d5">6.517241379310344</data>
+    </edge>
+    <edge source="SBCF" target="SNJM">
+      <data key="d4">30</data>
+      <data key="d5">3.6206896551724133</data>
+    </edge>
+    <edge source="SBCF" target="SNLN">
+      <data key="d4">53</data>
+      <data key="d5">6.396551724137931</data>
+    </edge>
+    <edge source="SBCF" target="SNPD">
+      <data key="d4">24</data>
+      <data key="d5">2.8965517241379306</data>
+    </edge>
+    <edge source="SBCF" target="SNSS">
+      <data key="d4">24</data>
+      <data key="d5">2.8965517241379306</data>
+    </edge>
+    <edge source="SBCF" target="SNTO">
+      <data key="d4">54</data>
+      <data key="d5">6.517241379310344</data>
+    </edge>
+    <edge source="SBCF" target="SNZR">
+      <data key="d4">24</data>
+      <data key="d5">2.8965517241379306</data>
+    </edge>
+    <edge source="SBGL" target="SBAR">
+      <data key="d4">49</data>
+      <data key="d5">5.913793103448275</data>
+    </edge>
+    <edge source="SBGL" target="SBBE">
+      <data key="d4">35</data>
+      <data key="d5">4.224137931034482</data>
+    </edge>
+    <edge source="SBGL" target="SBBR">
+      <data key="d4">176</data>
+      <data key="d5">21.241379310344826</data>
+    </edge>
+    <edge source="SBGL" target="SBCF">
+      <data key="d4">461</data>
+      <data key="d5">55.637931034482754</data>
+    </edge>
+    <edge source="SBGL" target="SBCT">
+      <data key="d4">313</data>
+      <data key="d5">37.775862068965516</data>
+    </edge>
+    <edge source="SBGL" target="SBCX">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBGL" target="SBEG">
+      <data key="d4">52</data>
+      <data key="d5">6.275862068965517</data>
+    </edge>
+    <edge source="SBGL" target="SBFI">
+      <data key="d4">146</data>
+      <data key="d5">17.620689655172413</data>
+    </edge>
+    <edge source="SBGL" target="SBFL">
+      <data key="d4">178</data>
+      <data key="d5">21.482758620689655</data>
+    </edge>
+    <edge source="SBGL" target="SBFZ">
+      <data key="d4">271</data>
+      <data key="d5">32.706896551724135</data>
+    </edge>
+    <edge source="SBGL" target="SBGR">
+      <data key="d4">790</data>
+      <data key="d5">95.34482758620689</data>
+    </edge>
+    <edge source="SBGL" target="SBJP">
+      <data key="d4">98</data>
+      <data key="d5">11.82758620689655</data>
+    </edge>
+    <edge source="SBGL" target="SBKG">
+      <data key="d4">38</data>
+      <data key="d5">4.586206896551723</data>
+    </edge>
+    <edge source="SBGL" target="SBKP">
+      <data key="d4">360</data>
+      <data key="d5">43.44827586206896</data>
+    </edge>
+    <edge source="SBGL" target="SBMO">
+      <data key="d4">109</data>
+      <data key="d5">13.155172413793101</data>
+    </edge>
+    <edge source="SBGL" target="SBNF">
+      <data key="d4">59</data>
+      <data key="d5">7.120689655172413</data>
+    </edge>
+    <edge source="SBGL" target="SBPS">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBGL" target="SBRF">
+      <data key="d4">480</data>
+      <data key="d5">57.93103448275861</data>
+    </edge>
+    <edge source="SBGL" target="SBSG">
+      <data key="d4">107</data>
+      <data key="d5">12.913793103448274</data>
+    </edge>
+    <edge source="SBGL" target="SBSJ">
+      <data key="d4">25</data>
+      <data key="d5">3.0172413793103448</data>
+    </edge>
+    <edge source="SBGL" target="SBSL">
+      <data key="d4">19</data>
+      <data key="d5">2.2931034482758617</data>
+    </edge>
+    <edge source="SBGL" target="SBSP">
+      <data key="d4">171</data>
+      <data key="d5">20.637931034482758</data>
+    </edge>
+    <edge source="SBGL" target="SBSV">
+      <data key="d4">397</data>
+      <data key="d5">47.91379310344827</data>
+    </edge>
+    <edge source="SBGL" target="SBVT">
+      <data key="d4">333</data>
+      <data key="d5">40.18965517241379</data>
+    </edge>
+    <edge source="SBGR" target="SBAR">
+      <data key="d4">301</data>
+      <data key="d5">36.32758620689655</data>
+    </edge>
+    <edge source="SBGR" target="SBAX">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBGR" target="SBBE">
+      <data key="d4">463</data>
+      <data key="d5">55.87931034482758</data>
+    </edge>
+    <edge source="SBGR" target="SBBR">
+      <data key="d4">573</data>
+      <data key="d5">69.1551724137931</data>
+    </edge>
+    <edge source="SBGR" target="SBCA">
+      <data key="d4">134</data>
+      <data key="d5">16.17241379310345</data>
+    </edge>
+    <edge source="SBGR" target="SBCF">
+      <data key="d4">779</data>
+      <data key="d5">94.01724137931033</data>
+    </edge>
+    <edge source="SBGR" target="SBCG">
+      <data key="d4">304</data>
+      <data key="d5">36.68965517241379</data>
+    </edge>
+    <edge source="SBGR" target="SBCH">
+      <data key="d4">131</data>
+      <data key="d5">15.810344827586205</data>
+    </edge>
+    <edge source="SBGR" target="SBCO">
+      <data key="d4">75</data>
+      <data key="d5">9.051724137931034</data>
+    </edge>
+    <edge source="SBGR" target="SBCT">
+      <data key="d4">696</data>
+      <data key="d5">83.99999999999999</data>
+    </edge>
+    <edge source="SBGR" target="SBCX">
+      <data key="d4">94</data>
+      <data key="d5">11.344827586206895</data>
+    </edge>
+    <edge source="SBGR" target="SBCY">
+      <data key="d4">625</data>
+      <data key="d5">75.43103448275862</data>
+    </edge>
+    <edge source="SBGR" target="SBDN">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBGR" target="SBEG">
+      <data key="d4">322</data>
+      <data key="d5">38.86206896551724</data>
+    </edge>
+    <edge source="SBGR" target="SBFI">
+      <data key="d4">401</data>
+      <data key="d5">48.39655172413793</data>
+    </edge>
+    <edge source="SBGR" target="SBFL">
+      <data key="d4">562</data>
+      <data key="d5">67.82758620689654</data>
+    </edge>
+    <edge source="SBGR" target="SBFZ">
+      <data key="d4">547</data>
+      <data key="d5">66.01724137931033</data>
+    </edge>
+    <edge source="SBGR" target="SBGL">
+      <data key="d4">788</data>
+      <data key="d5">95.10344827586206</data>
+    </edge>
+    <edge source="SBGR" target="SBGO">
+      <data key="d4">434</data>
+      <data key="d5">52.37931034482758</data>
+    </edge>
+    <edge source="SBGR" target="SBIL">
+      <data key="d4">129</data>
+      <data key="d5">15.568965517241377</data>
+    </edge>
+    <edge source="SBGR" target="SBIZ">
+      <data key="d4">116</data>
+      <data key="d5">13.999999999999998</data>
+    </edge>
+    <edge source="SBGR" target="SBJA">
+      <data key="d4">75</data>
+      <data key="d5">9.051724137931034</data>
+    </edge>
+    <edge source="SBGR" target="SBJE">
+      <data key="d4">83</data>
+      <data key="d5">10.017241379310343</data>
+    </edge>
+    <edge source="SBGR" target="SBJP">
+      <data key="d4">279</data>
+      <data key="d5">33.672413793103445</data>
+    </edge>
+    <edge source="SBGR" target="SBJU">
+      <data key="d4">111</data>
+      <data key="d5">13.39655172413793</data>
+    </edge>
+    <edge source="SBGR" target="SBJV">
+      <data key="d4">115</data>
+      <data key="d5">13.879310344827585</data>
+    </edge>
+    <edge source="SBGR" target="SBLO">
+      <data key="d4">229</data>
+      <data key="d5">27.637931034482754</data>
+    </edge>
+    <edge source="SBGR" target="SBMG">
+      <data key="d4">224</data>
+      <data key="d5">27.034482758620687</data>
+    </edge>
+    <edge source="SBGR" target="SBMK">
+      <data key="d4">91</data>
+      <data key="d5">10.982758620689655</data>
+    </edge>
+    <edge source="SBGR" target="SBMO">
+      <data key="d4">399</data>
+      <data key="d5">48.155172413793096</data>
+    </edge>
+    <edge source="SBGR" target="SBNF">
+      <data key="d4">374</data>
+      <data key="d5">45.137931034482754</data>
+    </edge>
+    <edge source="SBGR" target="SBNM">
+      <data key="d4">22</data>
+      <data key="d5">2.655172413793103</data>
+    </edge>
+    <edge source="SBGR" target="SBPF">
+      <data key="d4">99</data>
+      <data key="d5">11.948275862068964</data>
+    </edge>
+    <edge source="SBGR" target="SBPJ">
+      <data key="d4">116</data>
+      <data key="d5">13.999999999999998</data>
+    </edge>
+    <edge source="SBGR" target="SBPK">
+      <data key="d4">27</data>
+      <data key="d5">3.258620689655172</data>
+    </edge>
+    <edge source="SBGR" target="SBPL">
+      <data key="d4">157</data>
+      <data key="d5">18.948275862068964</data>
+    </edge>
+    <edge source="SBGR" target="SBPS">
+      <data key="d4">271</data>
+      <data key="d5">32.706896551724135</data>
+    </edge>
+    <edge source="SBGR" target="SBPV">
+      <data key="d4">23</data>
+      <data key="d5">2.775862068965517</data>
+    </edge>
+    <edge source="SBGR" target="SBRF">
+      <data key="d4">844</data>
+      <data key="d5">101.86206896551724</data>
+    </edge>
+    <edge source="SBGR" target="SBRJ">
+      <data key="d4">344</data>
+      <data key="d5">41.51724137931034</data>
+    </edge>
+    <edge source="SBGR" target="SBRP">
+      <data key="d4">167</data>
+      <data key="d5">20.155172413793103</data>
+    </edge>
+    <edge source="SBGR" target="SBSG">
+      <data key="d4">347</data>
+      <data key="d5">41.87931034482758</data>
+    </edge>
+    <edge source="SBGR" target="SBSI">
+      <data key="d4">146</data>
+      <data key="d5">17.620689655172413</data>
+    </edge>
+    <edge source="SBGR" target="SBSL">
+      <data key="d4">230</data>
+      <data key="d5">27.75862068965517</data>
+    </edge>
+    <edge source="SBGR" target="SBSR">
+      <data key="d4">144</data>
+      <data key="d5">17.379310344827584</data>
+    </edge>
+    <edge source="SBGR" target="SBSV">
+      <data key="d4">509</data>
+      <data key="d5">61.43103448275861</data>
+    </edge>
+    <edge source="SBGR" target="SBTE">
+      <data key="d4">156</data>
+      <data key="d5">18.82758620689655</data>
+    </edge>
+    <edge source="SBGR" target="SBUL">
+      <data key="d4">204</data>
+      <data key="d5">24.620689655172413</data>
+    </edge>
+    <edge source="SBGR" target="SBVC">
+      <data key="d4">160</data>
+      <data key="d5">19.310344827586206</data>
+    </edge>
+    <edge source="SBGR" target="SBVT">
+      <data key="d4">370</data>
+      <data key="d5">44.655172413793096</data>
+    </edge>
+    <edge source="SBGR" target="SBZM">
+      <data key="d4">110</data>
+      <data key="d5">13.275862068965516</data>
+    </edge>
+    <edge source="SBGR" target="SWLC">
+      <data key="d4">54</data>
+      <data key="d5">6.517241379310344</data>
+    </edge>
+    <edge source="SBRF" target="SBAR">
+      <data key="d4">191</data>
+      <data key="d5">23.051724137931032</data>
+    </edge>
+    <edge source="SBRF" target="SBBE">
+      <data key="d4">127</data>
+      <data key="d5">15.32758620689655</data>
+    </edge>
+    <edge source="SBRF" target="SBBR">
+      <data key="d4">346</data>
+      <data key="d5">41.75862068965517</data>
+    </edge>
+    <edge source="SBRF" target="SBCF">
+      <data key="d4">273</data>
+      <data key="d5">32.94827586206896</data>
+    </edge>
+    <edge source="SBRF" target="SBEG">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBRF" target="SBFN">
+      <data key="d4">321</data>
+      <data key="d5">38.741379310344826</data>
+    </edge>
+    <edge source="SBRF" target="SBFZ">
+      <data key="d4">325</data>
+      <data key="d5">39.22413793103448</data>
+    </edge>
+    <edge source="SBRF" target="SBGL">
+      <data key="d4">477</data>
+      <data key="d5">57.568965517241374</data>
+    </edge>
+    <edge source="SBRF" target="SBGO">
+      <data key="d4">126</data>
+      <data key="d5">15.206896551724137</data>
+    </edge>
+    <edge source="SBRF" target="SBGR">
+      <data key="d4">842</data>
+      <data key="d5">101.6206896551724</data>
+    </edge>
+    <edge source="SBRF" target="SBJP">
+      <data key="d4">122</data>
+      <data key="d5">14.724137931034482</data>
+    </edge>
+    <edge source="SBRF" target="SBJU">
+      <data key="d4">78</data>
+      <data key="d5">9.413793103448276</data>
+    </edge>
+    <edge source="SBRF" target="SBKG">
+      <data key="d4">144</data>
+      <data key="d5">17.379310344827584</data>
+    </edge>
+    <edge source="SBRF" target="SBKP">
+      <data key="d4">352</data>
+      <data key="d5">42.48275862068965</data>
+    </edge>
+    <edge source="SBRF" target="SBMO">
+      <data key="d4">272</data>
+      <data key="d5">32.82758620689655</data>
+    </edge>
+    <edge source="SBRF" target="SBMS">
+      <data key="d4">54</data>
+      <data key="d5">6.517241379310344</data>
+    </edge>
+    <edge source="SBRF" target="SBPL">
+      <data key="d4">122</data>
+      <data key="d5">14.724137931034482</data>
+    </edge>
+    <edge source="SBRF" target="SBRP">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBRF" target="SBSG">
+      <data key="d4">341</data>
+      <data key="d5">41.1551724137931</data>
+    </edge>
+    <edge source="SBRF" target="SBSL">
+      <data key="d4">97</data>
+      <data key="d5">11.706896551724137</data>
+    </edge>
+    <edge source="SBRF" target="SBSP">
+      <data key="d4">567</data>
+      <data key="d5">68.43103448275862</data>
+    </edge>
+    <edge source="SBRF" target="SBSR">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBRF" target="SBSV">
+      <data key="d4">368</data>
+      <data key="d5">44.41379310344827</data>
+    </edge>
+    <edge source="SBRF" target="SBTE">
+      <data key="d4">112</data>
+      <data key="d5">13.517241379310343</data>
+    </edge>
+    <edge source="SBRF" target="SBUF">
+      <data key="d4">22</data>
+      <data key="d5">2.655172413793103</data>
+    </edge>
+    <edge source="SBRF" target="SBUL">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBRF" target="SBVT">
+      <data key="d4">57</data>
+      <data key="d5">6.879310344827585</data>
+    </edge>
+    <edge source="SBRF" target="SDIY">
+      <data key="d4">32</data>
+      <data key="d5">3.862068965517241</data>
+    </edge>
+    <edge source="SBRF" target="SJZA">
+      <data key="d4">24</data>
+      <data key="d5">2.8965517241379306</data>
+    </edge>
+    <edge source="SBRF" target="SNAB">
+      <data key="d4">23</data>
+      <data key="d5">2.775862068965517</data>
+    </edge>
+    <edge source="SBRF" target="SNGN">
+      <data key="d4">21</data>
+      <data key="d5">2.5344827586206895</data>
+    </edge>
+    <edge source="SBRF" target="SNHS">
+      <data key="d4">30</data>
+      <data key="d5">3.6206896551724133</data>
+    </edge>
+    <edge source="SBRF" target="SNRU">
+      <data key="d4">39</data>
+      <data key="d5">4.706896551724138</data>
+    </edge>
+    <edge source="SBRF" target="SNTS">
+      <data key="d4">50</data>
+      <data key="d5">6.0344827586206895</data>
+    </edge>
+    <edge source="SBRF" target="SWKQ">
+      <data key="d4">14</data>
+      <data key="d5">1.689655172413793</data>
+    </edge>
+    <edge source="SBSP" target="SBAR">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBSP" target="SBAU">
+      <data key="d4">24</data>
+      <data key="d5">2.8965517241379306</data>
+    </edge>
+    <edge source="SBSP" target="SBBR">
+      <data key="d4">1608</data>
+      <data key="d5">194.06896551724137</data>
+    </edge>
+    <edge source="SBSP" target="SBCA">
+      <data key="d4">22</data>
+      <data key="d5">2.655172413793103</data>
+    </edge>
+    <edge source="SBSP" target="SBCF">
+      <data key="d4">1507</data>
+      <data key="d5">181.87931034482756</data>
+    </edge>
+    <edge source="SBSP" target="SBCG">
+      <data key="d4">116</data>
+      <data key="d5">13.999999999999998</data>
+    </edge>
+    <edge source="SBSP" target="SBCH">
+      <data key="d4">45</data>
+      <data key="d5">5.43103448275862</data>
+    </edge>
+    <edge source="SBSP" target="SBCN">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBSP" target="SBCO">
+      <data key="d4">23</data>
+      <data key="d5">2.775862068965517</data>
+    </edge>
+    <edge source="SBSP" target="SBCT">
+      <data key="d4">1223</data>
+      <data key="d5">147.60344827586206</data>
+    </edge>
+    <edge source="SBSP" target="SBCX">
+      <data key="d4">98</data>
+      <data key="d5">11.82758620689655</data>
+    </edge>
+    <edge source="SBSP" target="SBCY">
+      <data key="d4">116</data>
+      <data key="d5">13.999999999999998</data>
+    </edge>
+    <edge source="SBSP" target="SBDB">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBSP" target="SBDN">
+      <data key="d4">163</data>
+      <data key="d5">19.672413793103445</data>
+    </edge>
+    <edge source="SBSP" target="SBFI">
+      <data key="d4">116</data>
+      <data key="d5">13.999999999999998</data>
+    </edge>
+    <edge source="SBSP" target="SBFL">
+      <data key="d4">915</data>
+      <data key="d5">110.4310344827586</data>
+    </edge>
+    <edge source="SBSP" target="SBFZ">
+      <data key="d4">272</data>
+      <data key="d5">32.82758620689655</data>
+    </edge>
+    <edge source="SBSP" target="SBGL">
+      <data key="d4">174</data>
+      <data key="d5">20.999999999999996</data>
+    </edge>
+    <edge source="SBSP" target="SBGO">
+      <data key="d4">567</data>
+      <data key="d5">68.43103448275862</data>
+    </edge>
+    <edge source="SBSP" target="SBIL">
+      <data key="d4">90</data>
+      <data key="d5">10.86206896551724</data>
+    </edge>
+    <edge source="SBSP" target="SBIP">
+      <data key="d4">57</data>
+      <data key="d5">6.879310344827585</data>
+    </edge>
+    <edge source="SBSP" target="SBJP">
+      <data key="d4">10</data>
+      <data key="d5">1.206896551724138</data>
+    </edge>
+    <edge source="SBSP" target="SBJR">
+      <data key="d4">317</data>
+      <data key="d5">38.25862068965517</data>
+    </edge>
+    <edge source="SBSP" target="SBJV">
+      <data key="d4">164</data>
+      <data key="d5">19.79310344827586</data>
+    </edge>
+    <edge source="SBSP" target="SBLO">
+      <data key="d4">145</data>
+      <data key="d5">17.5</data>
+    </edge>
+    <edge source="SBSP" target="SBMG">
+      <data key="d4">103</data>
+      <data key="d5">12.43103448275862</data>
+    </edge>
+    <edge source="SBSP" target="SBMK">
+      <data key="d4">49</data>
+      <data key="d5">5.913793103448275</data>
+    </edge>
+    <edge source="SBSP" target="SBMO">
+      <data key="d4">90</data>
+      <data key="d5">10.86206896551724</data>
+    </edge>
+    <edge source="SBSP" target="SBNF">
+      <data key="d4">540</data>
+      <data key="d5">65.17241379310344</data>
+    </edge>
+    <edge source="SBSP" target="SBPS">
+      <data key="d4">190</data>
+      <data key="d5">22.93103448275862</data>
+    </edge>
+    <edge source="SBSP" target="SBRF">
+      <data key="d4">570</data>
+      <data key="d5">68.79310344827586</data>
+    </edge>
+    <edge source="SBSP" target="SBRJ">
+      <data key="d4">3008</data>
+      <data key="d5">363.03448275862064</data>
+    </edge>
+    <edge source="SBSP" target="SBRP">
+      <data key="d4">231</data>
+      <data key="d5">27.879310344827584</data>
+    </edge>
+    <edge source="SBSP" target="SBSG">
+      <data key="d4">67</data>
+      <data key="d5">8.086206896551724</data>
+    </edge>
+    <edge source="SBSP" target="SBSR">
+      <data key="d4">164</data>
+      <data key="d5">19.79310344827586</data>
+    </edge>
+    <edge source="SBSP" target="SBSV">
+      <data key="d4">825</data>
+      <data key="d5">99.56896551724137</data>
+    </edge>
+    <edge source="SBSP" target="SBTC">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBSP" target="SBUL">
+      <data key="d4">147</data>
+      <data key="d5">17.741379310344826</data>
+    </edge>
+    <edge source="SBSP" target="SBUR">
+      <data key="d4">23</data>
+      <data key="d5">2.775862068965517</data>
+    </edge>
+    <edge source="SBSP" target="SBVT">
+      <data key="d4">441</data>
+      <data key="d5">53.22413793103448</data>
+    </edge>
+    <edge source="SBSP" target="SBZM">
+      <data key="d4">76</data>
+      <data key="d5">9.172413793103447</data>
+    </edge>
+    <edge source="SBAT" target="SBCY">
+      <data key="d4">40</data>
+      <data key="d5">4.827586206896552</data>
+    </edge>
+    <edge source="SBCY" target="SBAT">
+      <data key="d4">40</data>
+      <data key="d5">4.827586206896552</data>
+    </edge>
+    <edge source="SBCY" target="SBBR">
+      <data key="d4">201</data>
+      <data key="d5">24.25862068965517</data>
+    </edge>
+    <edge source="SBCY" target="SBBW">
+      <data key="d4">35</data>
+      <data key="d5">4.224137931034482</data>
+    </edge>
+    <edge source="SBCY" target="SBCF">
+      <data key="d4">96</data>
+      <data key="d5">11.586206896551722</data>
+    </edge>
+    <edge source="SBCY" target="SBCG">
+      <data key="d4">55</data>
+      <data key="d5">6.637931034482758</data>
+    </edge>
+    <edge source="SBCY" target="SBCT">
+      <data key="d4">79</data>
+      <data key="d5">9.534482758620689</data>
+    </edge>
+    <edge source="SBCY" target="SBGO">
+      <data key="d4">109</data>
+      <data key="d5">13.155172413793101</data>
+    </edge>
+    <edge source="SBCY" target="SBGR">
+      <data key="d4">625</data>
+      <data key="d5">75.43103448275862</data>
+    </edge>
+    <edge source="SBCY" target="SBJI">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBCY" target="SBKP">
+      <data key="d4">256</data>
+      <data key="d5">30.89655172413793</data>
+    </edge>
+    <edge source="SBCY" target="SBMO">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBCY" target="SBSI">
+      <data key="d4">57</data>
+      <data key="d5">6.879310344827585</data>
+    </edge>
+    <edge source="SBCY" target="SBSO">
+      <data key="d4">47</data>
+      <data key="d5">5.6724137931034475</data>
+    </edge>
+    <edge source="SBCY" target="SBSP">
+      <data key="d4">115</data>
+      <data key="d5">13.879310344827585</data>
+    </edge>
+    <edge source="SBCY" target="SBVH">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBCY" target="SSKW">
+      <data key="d4">16</data>
+      <data key="d5">1.9310344827586206</data>
+    </edge>
+    <edge source="SBCY" target="SSOU">
+      <data key="d4">35</data>
+      <data key="d5">4.224137931034482</data>
+    </edge>
+    <edge source="SBAU" target="SBKP">
+      <data key="d4">100</data>
+      <data key="d5">12.068965517241379</data>
+    </edge>
+    <edge source="SBAU" target="SBSP">
+      <data key="d4">24</data>
+      <data key="d5">2.8965517241379306</data>
+    </edge>
+    <edge source="SBAX" target="SBGR">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBAX" target="SBUR">
+      <data key="d4">32</data>
+      <data key="d5">3.862068965517241</data>
+    </edge>
+    <edge source="SBUR" target="SBCF">
+      <data key="d4">83</data>
+      <data key="d5">10.017241379310343</data>
+    </edge>
+    <edge source="SBUR" target="SBSP">
+      <data key="d4">23</data>
+      <data key="d5">2.775862068965517</data>
+    </edge>
+    <edge source="SBBE" target="SBBR">
+      <data key="d4">253</data>
+      <data key="d5">30.534482758620687</data>
+    </edge>
+    <edge source="SBBE" target="SBBV">
+      <data key="d4">56</data>
+      <data key="d5">6.758620689655172</data>
+    </edge>
+    <edge source="SBBE" target="SBCF">
+      <data key="d4">129</data>
+      <data key="d5">15.568965517241377</data>
+    </edge>
+    <edge source="SBBE" target="SBCJ">
+      <data key="d4">64</data>
+      <data key="d5">7.724137931034482</data>
+    </edge>
+    <edge source="SBBE" target="SBEG">
+      <data key="d4">132</data>
+      <data key="d5">15.93103448275862</data>
+    </edge>
+    <edge source="SBBE" target="SBFZ">
+      <data key="d4">164</data>
+      <data key="d5">19.79310344827586</data>
+    </edge>
+    <edge source="SBBE" target="SBGL">
+      <data key="d4">35</data>
+      <data key="d5">4.224137931034482</data>
+    </edge>
+    <edge source="SBBE" target="SBGR">
+      <data key="d4">459</data>
+      <data key="d5">55.39655172413793</data>
+    </edge>
+    <edge source="SBBE" target="SBHT">
+      <data key="d4">103</data>
+      <data key="d5">12.43103448275862</data>
+    </edge>
+    <edge source="SBBE" target="SBKP">
+      <data key="d4">175</data>
+      <data key="d5">21.120689655172413</data>
+    </edge>
+    <edge source="SBBE" target="SBMA">
+      <data key="d4">111</data>
+      <data key="d5">13.39655172413793</data>
+    </edge>
+    <edge source="SBBE" target="SBMD">
+      <data key="d4">28</data>
+      <data key="d5">3.379310344827586</data>
+    </edge>
+    <edge source="SBBE" target="SBMQ">
+      <data key="d4">225</data>
+      <data key="d5">27.1551724137931</data>
+    </edge>
+    <edge source="SBBE" target="SBRF">
+      <data key="d4">127</data>
+      <data key="d5">15.32758620689655</data>
+    </edge>
+    <edge source="SBBE" target="SBSG">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBBE" target="SBSL">
+      <data key="d4">110</data>
+      <data key="d5">13.275862068965516</data>
+    </edge>
+    <edge source="SBBE" target="SBSN">
+      <data key="d4">154</data>
+      <data key="d5">18.586206896551722</data>
+    </edge>
+    <edge source="SBBE" target="SBTU">
+      <data key="d4">19</data>
+      <data key="d5">2.2931034482758617</data>
+    </edge>
+    <edge source="SBBE" target="SNEB">
+      <data key="d4">22</data>
+      <data key="d5">2.655172413793103</data>
+    </edge>
+    <edge source="SBBE" target="SNSM">
+      <data key="d4">20</data>
+      <data key="d5">2.413793103448276</data>
+    </edge>
+    <edge source="SBBE" target="SNVS">
+      <data key="d4">26</data>
+      <data key="d5">3.1379310344827585</data>
+    </edge>
+    <edge source="SBBV" target="SBBE">
+      <data key="d4">57</data>
+      <data key="d5">6.879310344827585</data>
+    </edge>
+    <edge source="SBBV" target="SBBR">
+      <data key="d4">139</data>
+      <data key="d5">16.775862068965516</data>
+    </edge>
+    <edge source="SBBV" target="SBEG">
+      <data key="d4">54</data>
+      <data key="d5">6.517241379310344</data>
+    </edge>
+    <edge source="SBBV" target="SBKP">
+      <data key="d4">8</data>
+      <data key="d5">0.9655172413793103</data>
+    </edge>
+    <edge source="SBCJ" target="SBBE">
+      <data key="d4">64</data>
+      <data key="d5">7.724137931034482</data>
+    </edge>
+    <edge source="SBCJ" target="SBCF">
+      <data key="d4">72</data>
+      <data key="d5">8.689655172413792</data>
+    </edge>
+    <edge source="SBCJ" target="SDOW">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBEG" target="SBBE">
+      <data key="d4">133</data>
+      <data key="d5">16.051724137931032</data>
+    </edge>
+    <edge source="SBEG" target="SBBR">
+      <data key="d4">222</data>
+      <data key="d5">26.79310344827586</data>
+    </edge>
+    <edge source="SBEG" target="SBBV">
+      <data key="d4">56</data>
+      <data key="d5">6.758620689655172</data>
+    </edge>
+    <edge source="SBEG" target="SBFZ">
+      <data key="d4">68</data>
+      <data key="d5">8.206896551724137</data>
+    </edge>
+    <edge source="SBEG" target="SBGL">
+      <data key="d4">53</data>
+      <data key="d5">6.396551724137931</data>
+    </edge>
+    <edge source="SBEG" target="SBGR">
+      <data key="d4">323</data>
+      <data key="d5">38.98275862068965</data>
+    </edge>
+    <edge source="SBEG" target="SBIH">
+      <data key="d4">30</data>
+      <data key="d5">3.6206896551724133</data>
+    </edge>
+    <edge source="SBEG" target="SBKP">
+      <data key="d4">174</data>
+      <data key="d5">20.999999999999996</data>
+    </edge>
+    <edge source="SBEG" target="SBMY">
+      <data key="d4">20</data>
+      <data key="d5">2.413793103448276</data>
+    </edge>
+    <edge source="SBEG" target="SBRB">
+      <data key="d4">25</data>
+      <data key="d5">3.0172413793103448</data>
+    </edge>
+    <edge source="SBEG" target="SBRF">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBEG" target="SBSN">
+      <data key="d4">88</data>
+      <data key="d5">10.620689655172413</data>
+    </edge>
+    <edge source="SBEG" target="SBTB">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBEG" target="SBTF">
+      <data key="d4">46</data>
+      <data key="d5">5.551724137931034</data>
+    </edge>
+    <edge source="SBEG" target="SBTT">
+      <data key="d4">55</data>
+      <data key="d5">6.637931034482758</data>
+    </edge>
+    <edge source="SBEG" target="SBUA">
+      <data key="d4">16</data>
+      <data key="d5">1.9310344827586206</data>
+    </edge>
+    <edge source="SBEG" target="SWBC">
+      <data key="d4">10</data>
+      <data key="d5">1.206896551724138</data>
+    </edge>
+    <edge source="SBEG" target="SWBR">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBEG" target="SWEI">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBEG" target="SWKO">
+      <data key="d4">42</data>
+      <data key="d5">5.068965517241379</data>
+    </edge>
+    <edge source="SBEG" target="SWLB">
+      <data key="d4">22</data>
+      <data key="d5">2.655172413793103</data>
+    </edge>
+    <edge source="SBEG" target="SWMW">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBEG" target="SWPI">
+      <data key="d4">81</data>
+      <data key="d5">9.775862068965516</data>
+    </edge>
+    <edge source="SBEG" target="SWYN">
+      <data key="d4">13</data>
+      <data key="d5">1.5689655172413792</data>
+    </edge>
+    <edge source="SBHT" target="SBBE">
+      <data key="d4">103</data>
+      <data key="d5">12.43103448275862</data>
+    </edge>
+    <edge source="SBMA" target="SBBE">
+      <data key="d4">112</data>
+      <data key="d5">13.517241379310343</data>
+    </edge>
+    <edge source="SBMA" target="SBBR">
+      <data key="d4">83</data>
+      <data key="d5">10.017241379310343</data>
+    </edge>
+    <edge source="SBMA" target="SBCF">
+      <data key="d4">47</data>
+      <data key="d5">5.6724137931034475</data>
+    </edge>
+    <edge source="SBMD" target="SBBE">
+      <data key="d4">14</data>
+      <data key="d5">1.689655172413793</data>
+    </edge>
+    <edge source="SBMD" target="SNYA">
+      <data key="d4">14</data>
+      <data key="d5">1.689655172413793</data>
+    </edge>
+    <edge source="SBMQ" target="SBBE">
+      <data key="d4">224</data>
+      <data key="d5">27.034482758620687</data>
+    </edge>
+    <edge source="SBMQ" target="SBBR">
+      <data key="d4">57</data>
+      <data key="d5">6.879310344827585</data>
+    </edge>
+    <edge source="SBSG" target="SBBE">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBSG" target="SBBR">
+      <data key="d4">140</data>
+      <data key="d5">16.89655172413793</data>
+    </edge>
+    <edge source="SBSG" target="SBCF">
+      <data key="d4">67</data>
+      <data key="d5">8.086206896551724</data>
+    </edge>
+    <edge source="SBSG" target="SBDN">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBSG" target="SBFN">
+      <data key="d4">32</data>
+      <data key="d5">3.862068965517241</data>
+    </edge>
+    <edge source="SBSG" target="SBFZ">
+      <data key="d4">64</data>
+      <data key="d5">7.724137931034482</data>
+    </edge>
+    <edge source="SBSG" target="SBGL">
+      <data key="d4">108</data>
+      <data key="d5">13.034482758620689</data>
+    </edge>
+    <edge source="SBSG" target="SBGR">
+      <data key="d4">345</data>
+      <data key="d5">41.637931034482754</data>
+    </edge>
+    <edge source="SBSG" target="SBKP">
+      <data key="d4">70</data>
+      <data key="d5">8.448275862068964</data>
+    </edge>
+    <edge source="SBSG" target="SBMS">
+      <data key="d4">29</data>
+      <data key="d5">3.4999999999999996</data>
+    </edge>
+    <edge source="SBSG" target="SBRF">
+      <data key="d4">338</data>
+      <data key="d5">40.79310344827586</data>
+    </edge>
+    <edge source="SBSG" target="SBRP">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBSG" target="SBSP">
+      <data key="d4">66</data>
+      <data key="d5">7.96551724137931</data>
+    </edge>
+    <edge source="SBSG" target="SBSR">
+      <data key="d4">8</data>
+      <data key="d5">0.9655172413793103</data>
+    </edge>
+    <edge source="SBSG" target="SBSV">
+      <data key="d4">43</data>
+      <data key="d5">5.189655172413793</data>
+    </edge>
+    <edge source="SBSG" target="SBUL">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBSL" target="SBBE">
+      <data key="d4">55</data>
+      <data key="d5">6.637931034482758</data>
+    </edge>
+    <edge source="SBSL" target="SBBR">
+      <data key="d4">128</data>
+      <data key="d5">15.448275862068964</data>
+    </edge>
+    <edge source="SBSL" target="SBCF">
+      <data key="d4">53</data>
+      <data key="d5">6.396551724137931</data>
+    </edge>
+    <edge source="SBSL" target="SBFZ">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBSL" target="SBGL">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBSL" target="SBGR">
+      <data key="d4">231</data>
+      <data key="d5">27.879310344827584</data>
+    </edge>
+    <edge source="SBSL" target="SBIZ">
+      <data key="d4">59</data>
+      <data key="d5">7.120689655172413</data>
+    </edge>
+    <edge source="SBSL" target="SBKP">
+      <data key="d4">45</data>
+      <data key="d5">5.43103448275862</data>
+    </edge>
+    <edge source="SBSL" target="SBRF">
+      <data key="d4">96</data>
+      <data key="d5">11.586206896551722</data>
+    </edge>
+    <edge source="SBSL" target="SBSV">
+      <data key="d4">43</data>
+      <data key="d5">5.189655172413793</data>
+    </edge>
+    <edge source="SBSL" target="SBTE">
+      <data key="d4">63</data>
+      <data key="d5">7.6034482758620685</data>
+    </edge>
+    <edge source="SBSL" target="SSRS">
+      <data key="d4">22</data>
+      <data key="d5">2.655172413793103</data>
+    </edge>
+    <edge source="SBSN" target="SBBE">
+      <data key="d4">153</data>
+      <data key="d5">18.46551724137931</data>
+    </edge>
+    <edge source="SBSN" target="SBBR">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBSN" target="SBEG">
+      <data key="d4">90</data>
+      <data key="d5">10.86206896551724</data>
+    </edge>
+    <edge source="SBSN" target="SBIH">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBTU" target="SBBE">
+      <data key="d4">20</data>
+      <data key="d5">2.413793103448276</data>
+    </edge>
+    <edge source="SNEB" target="SBBE">
+      <data key="d4">21</data>
+      <data key="d5">2.5344827586206895</data>
+    </edge>
+    <edge source="SNSM" target="SBBE">
+      <data key="d4">20</data>
+      <data key="d5">2.413793103448276</data>
+    </edge>
+    <edge source="SNVS" target="SBBE">
+      <data key="d4">22</data>
+      <data key="d5">2.655172413793103</data>
+    </edge>
+    <edge source="SBCG" target="SBBR">
+      <data key="d4">115</data>
+      <data key="d5">13.879310344827585</data>
+    </edge>
+    <edge source="SBCG" target="SBCT">
+      <data key="d4">52</data>
+      <data key="d5">6.275862068965517</data>
+    </edge>
+    <edge source="SBCG" target="SBCY">
+      <data key="d4">53</data>
+      <data key="d5">6.396551724137931</data>
+    </edge>
+    <edge source="SBCG" target="SBGR">
+      <data key="d4">303</data>
+      <data key="d5">36.568965517241374</data>
+    </edge>
+    <edge source="SBCG" target="SBKP">
+      <data key="d4">205</data>
+      <data key="d5">24.741379310344826</data>
+    </edge>
+    <edge source="SBCG" target="SBSP">
+      <data key="d4">117</data>
+      <data key="d5">14.120689655172413</data>
+    </edge>
+    <edge source="SBCT" target="SBBR">
+      <data key="d4">199</data>
+      <data key="d5">24.01724137931034</data>
+    </edge>
+    <edge source="SBCT" target="SBCA">
+      <data key="d4">45</data>
+      <data key="d5">5.43103448275862</data>
+    </edge>
+    <edge source="SBCT" target="SBCF">
+      <data key="d4">93</data>
+      <data key="d5">11.224137931034482</data>
+    </edge>
+    <edge source="SBCT" target="SBCG">
+      <data key="d4">55</data>
+      <data key="d5">6.637931034482758</data>
+    </edge>
+    <edge source="SBCT" target="SBCY">
+      <data key="d4">79</data>
+      <data key="d5">9.534482758620689</data>
+    </edge>
+    <edge source="SBCT" target="SBFI">
+      <data key="d4">181</data>
+      <data key="d5">21.844827586206893</data>
+    </edge>
+    <edge source="SBCT" target="SBFL">
+      <data key="d4">55</data>
+      <data key="d5">6.637931034482758</data>
+    </edge>
+    <edge source="SBCT" target="SBGL">
+      <data key="d4">313</data>
+      <data key="d5">37.775862068965516</data>
+    </edge>
+    <edge source="SBCT" target="SBGR">
+      <data key="d4">696</data>
+      <data key="d5">83.99999999999999</data>
+    </edge>
+    <edge source="SBCT" target="SBKP">
+      <data key="d4">448</data>
+      <data key="d5">54.068965517241374</data>
+    </edge>
+    <edge source="SBCT" target="SBLO">
+      <data key="d4">93</data>
+      <data key="d5">11.224137931034482</data>
+    </edge>
+    <edge source="SBCT" target="SBMG">
+      <data key="d4">103</data>
+      <data key="d5">12.43103448275862</data>
+    </edge>
+    <edge source="SBCT" target="SBPO">
+      <data key="d4">20</data>
+      <data key="d5">2.413793103448276</data>
+    </edge>
+    <edge source="SBCT" target="SBSP">
+      <data key="d4">1216</data>
+      <data key="d5">146.75862068965515</data>
+    </edge>
+    <edge source="SBCT" target="SBUG">
+      <data key="d4">10</data>
+      <data key="d5">1.206896551724138</data>
+    </edge>
+    <edge source="SBCT" target="SSGY">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBCT" target="SSUM">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBCT" target="SSUV">
+      <data key="d4">11</data>
+      <data key="d5">1.3275862068965516</data>
+    </edge>
+    <edge source="SBCT" target="SSVL">
+      <data key="d4">12</data>
+      <data key="d5">1.4482758620689653</data>
+    </edge>
+    <edge source="SBFL" target="SBBR">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBFL" target="SBCF">
+      <data key="d4">64</data>
+      <data key="d5">7.724137931034482</data>
+    </edge>
+    <edge source="SBFL" target="SBCH">
+      <data key="d4">46</data>
+      <data key="d5">5.551724137931034</data>
+    </edge>
+    <edge source="SBFL" target="SBCT">
+      <data key="d4">53</data>
+      <data key="d5">6.396551724137931</data>
+    </edge>
+    <edge source="SBFL" target="SBFI">
+      <data key="d4">54</data>
+      <data key="d5">6.517241379310344</data>
+    </edge>
+    <edge source="SBFL" target="SBGL">
+      <data key="d4">180</data>
+      <data key="d5">21.72413793103448</data>
+    </edge>
+    <edge source="SBFL" target="SBGR">
+      <data key="d4">555</data>
+      <data key="d5">66.98275862068965</data>
+    </edge>
+    <edge source="SBFL" target="SBKP">
+      <data key="d4">326</data>
+      <data key="d5">39.34482758620689</data>
+    </edge>
+    <edge source="SBFL" target="SBPK">
+      <data key="d4">10</data>
+      <data key="d5">1.206896551724138</data>
+    </edge>
+    <edge source="SBFL" target="SBSM">
+      <data key="d4">10</data>
+      <data key="d5">1.206896551724138</data>
+    </edge>
+    <edge source="SBFL" target="SBSP">
+      <data key="d4">907</data>
+      <data key="d5">109.4655172413793</data>
+    </edge>
+    <edge source="SBGO" target="SBBR">
+      <data key="d4">132</data>
+      <data key="d5">15.93103448275862</data>
+    </edge>
+    <edge source="SBGO" target="SBCF">
+      <data key="d4">189</data>
+      <data key="d5">22.810344827586206</data>
+    </edge>
+    <edge source="SBGO" target="SBCY">
+      <data key="d4">108</data>
+      <data key="d5">13.034482758620689</data>
+    </edge>
+    <edge source="SBGO" target="SBGR">
+      <data key="d4">433</data>
+      <data key="d5">52.25862068965517</data>
+    </edge>
+    <edge source="SBGO" target="SBKP">
+      <data key="d4">235</data>
+      <data key="d5">28.36206896551724</data>
+    </edge>
+    <edge source="SBGO" target="SBMO">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBGO" target="SBPJ">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBGO" target="SBPS">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBGO" target="SBRF">
+      <data key="d4">127</data>
+      <data key="d5">15.32758620689655</data>
+    </edge>
+    <edge source="SBGO" target="SBSP">
+      <data key="d4">566</data>
+      <data key="d5">68.3103448275862</data>
+    </edge>
+    <edge source="SBGO" target="SBSV">
+      <data key="d4">34</data>
+      <data key="d5">4.1034482758620685</data>
+    </edge>
+    <edge source="SBIZ" target="SBBR">
+      <data key="d4">44</data>
+      <data key="d5">5.310344827586206</data>
+    </edge>
+    <edge source="SBIZ" target="SBCF">
+      <data key="d4">34</data>
+      <data key="d5">4.1034482758620685</data>
+    </edge>
+    <edge source="SBIZ" target="SBGR">
+      <data key="d4">116</data>
+      <data key="d5">13.999999999999998</data>
+    </edge>
+    <edge source="SBIZ" target="SBSL">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBJP" target="SBBR">
+      <data key="d4">128</data>
+      <data key="d5">15.448275862068964</data>
+    </edge>
+    <edge source="SBJP" target="SBCF">
+      <data key="d4">39</data>
+      <data key="d5">4.706896551724138</data>
+    </edge>
+    <edge source="SBJP" target="SBGL">
+      <data key="d4">98</data>
+      <data key="d5">11.82758620689655</data>
+    </edge>
+    <edge source="SBJP" target="SBGR">
+      <data key="d4">278</data>
+      <data key="d5">33.55172413793103</data>
+    </edge>
+    <edge source="SBJP" target="SBKP">
+      <data key="d4">42</data>
+      <data key="d5">5.068965517241379</data>
+    </edge>
+    <edge source="SBJP" target="SBRF">
+      <data key="d4">122</data>
+      <data key="d5">14.724137931034482</data>
+    </edge>
+    <edge source="SBJP" target="SBSP">
+      <data key="d4">8</data>
+      <data key="d5">0.9655172413793103</data>
+    </edge>
+    <edge source="SBJP" target="SBSV">
+      <data key="d4">45</data>
+      <data key="d5">5.43103448275862</data>
+    </edge>
+    <edge source="SBJP" target="SBUL">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBJU" target="SBBR">
+      <data key="d4">33</data>
+      <data key="d5">3.982758620689655</data>
+    </edge>
+    <edge source="SBJU" target="SBFZ">
+      <data key="d4">91</data>
+      <data key="d5">10.982758620689655</data>
+    </edge>
+    <edge source="SBJU" target="SBGR">
+      <data key="d4">111</data>
+      <data key="d5">13.39655172413793</data>
+    </edge>
+    <edge source="SBJU" target="SBKP">
+      <data key="d4">53</data>
+      <data key="d5">6.396551724137931</data>
+    </edge>
+    <edge source="SBJU" target="SBRF">
+      <data key="d4">78</data>
+      <data key="d5">9.413793103448276</data>
+    </edge>
+    <edge source="SBMO" target="SBBR">
+      <data key="d4">123</data>
+      <data key="d5">14.844827586206895</data>
+    </edge>
+    <edge source="SBMO" target="SBCF">
+      <data key="d4">98</data>
+      <data key="d5">11.82758620689655</data>
+    </edge>
+    <edge source="SBMO" target="SBCY">
+      <data key="d4">8</data>
+      <data key="d5">0.9655172413793103</data>
+    </edge>
+    <edge source="SBMO" target="SBGL">
+      <data key="d4">109</data>
+      <data key="d5">13.155172413793101</data>
+    </edge>
+    <edge source="SBMO" target="SBGO">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBMO" target="SBGR">
+      <data key="d4">397</data>
+      <data key="d5">47.91379310344827</data>
+    </edge>
+    <edge source="SBMO" target="SBJP">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBMO" target="SBKG">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBMO" target="SBKP">
+      <data key="d4">73</data>
+      <data key="d5">8.810344827586206</data>
+    </edge>
+    <edge source="SBMO" target="SBRF">
+      <data key="d4">269</data>
+      <data key="d5">32.46551724137931</data>
+    </edge>
+    <edge source="SBMO" target="SBRP">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBMO" target="SBSP">
+      <data key="d4">90</data>
+      <data key="d5">10.86206896551724</data>
+    </edge>
+    <edge source="SBMO" target="SBSR">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBMO" target="SBSV">
+      <data key="d4">59</data>
+      <data key="d5">7.120689655172413</data>
+    </edge>
+    <edge source="SBMO" target="SBUL">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBPJ" target="SBBR">
+      <data key="d4">137</data>
+      <data key="d5">16.534482758620687</data>
+    </edge>
+    <edge source="SBPJ" target="SBCF">
+      <data key="d4">33</data>
+      <data key="d5">3.982758620689655</data>
+    </edge>
+    <edge source="SBPJ" target="SBGO">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBPJ" target="SBGR">
+      <data key="d4">116</data>
+      <data key="d5">13.999999999999998</data>
+    </edge>
+    <edge source="SBPJ" target="SBKP">
+      <data key="d4">40</data>
+      <data key="d5">4.827586206896552</data>
+    </edge>
+    <edge source="SBPV" target="SBBR">
+      <data key="d4">112</data>
+      <data key="d5">13.517241379310343</data>
+    </edge>
+    <edge source="SBPV" target="SBCF">
+      <data key="d4">56</data>
+      <data key="d5">6.758620689655172</data>
+    </edge>
+    <edge source="SBPV" target="SBGR">
+      <data key="d4">23</data>
+      <data key="d5">2.775862068965517</data>
+    </edge>
+    <edge source="SBPV" target="SBJI">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBRB" target="SBBR">
+      <data key="d4">167</data>
+      <data key="d5">20.155172413793103</data>
+    </edge>
+    <edge source="SBRB" target="SBCZ">
+      <data key="d4">31</data>
+      <data key="d5">3.7413793103448274</data>
+    </edge>
+    <edge source="SBRB" target="SBEG">
+      <data key="d4">25</data>
+      <data key="d5">3.0172413793103448</data>
+    </edge>
+    <edge source="SBRJ" target="SBBR">
+      <data key="d4">545</data>
+      <data key="d5">65.77586206896551</data>
+    </edge>
+    <edge source="SBRJ" target="SBCF">
+      <data key="d4">276</data>
+      <data key="d5">33.310344827586206</data>
+    </edge>
+    <edge source="SBRJ" target="SBGR">
+      <data key="d4">345</data>
+      <data key="d5">41.637931034482754</data>
+    </edge>
+    <edge source="SBRJ" target="SBKP">
+      <data key="d4">481</data>
+      <data key="d5">58.05172413793103</data>
+    </edge>
+    <edge source="SBRJ" target="SBRP">
+      <data key="d4">50</data>
+      <data key="d5">6.0344827586206895</data>
+    </edge>
+    <edge source="SBRJ" target="SBSP">
+      <data key="d4">3000</data>
+      <data key="d5">362.06896551724134</data>
+    </edge>
+    <edge source="SBSI" target="SBBR">
+      <data key="d4">25</data>
+      <data key="d5">3.0172413793103448</data>
+    </edge>
+    <edge source="SBSI" target="SBCY">
+      <data key="d4">57</data>
+      <data key="d5">6.879310344827585</data>
+    </edge>
+    <edge source="SBSI" target="SBGR">
+      <data key="d4">145</data>
+      <data key="d5">17.5</data>
+    </edge>
+    <edge source="SBSI" target="SBKP">
+      <data key="d4">49</data>
+      <data key="d5">5.913793103448275</data>
+    </edge>
+    <edge source="SBSV" target="SBBR">
+      <data key="d4">301</data>
+      <data key="d5">36.32758620689655</data>
+    </edge>
+    <edge source="SBSV" target="SBCF">
+      <data key="d4">327</data>
+      <data key="d5">39.46551724137931</data>
+    </edge>
+    <edge source="SBSV" target="SBFZ">
+      <data key="d4">195</data>
+      <data key="d5">23.534482758620687</data>
+    </edge>
+    <edge source="SBSV" target="SBGL">
+      <data key="d4">387</data>
+      <data key="d5">46.706896551724135</data>
+    </edge>
+    <edge source="SBSV" target="SBGO">
+      <data key="d4">34</data>
+      <data key="d5">4.1034482758620685</data>
+    </edge>
+    <edge source="SBSV" target="SBGR">
+      <data key="d4">505</data>
+      <data key="d5">60.94827586206896</data>
+    </edge>
+    <edge source="SBSV" target="SBIL">
+      <data key="d4">19</data>
+      <data key="d5">2.2931034482758617</data>
+    </edge>
+    <edge source="SBSV" target="SBJP">
+      <data key="d4">46</data>
+      <data key="d5">5.551724137931034</data>
+    </edge>
+    <edge source="SBSV" target="SBKG">
+      <data key="d4">91</data>
+      <data key="d5">10.982758620689655</data>
+    </edge>
+    <edge source="SBSV" target="SBKP">
+      <data key="d4">286</data>
+      <data key="d5">34.51724137931034</data>
+    </edge>
+    <edge source="SBSV" target="SBMO">
+      <data key="d4">57</data>
+      <data key="d5">6.879310344827585</data>
+    </edge>
+    <edge source="SBSV" target="SBPS">
+      <data key="d4">32</data>
+      <data key="d5">3.862068965517241</data>
+    </edge>
+    <edge source="SBSV" target="SBRF">
+      <data key="d4">370</data>
+      <data key="d5">44.655172413793096</data>
+    </edge>
+    <edge source="SBSV" target="SBSG">
+      <data key="d4">43</data>
+      <data key="d5">5.189655172413793</data>
+    </edge>
+    <edge source="SBSV" target="SBSL">
+      <data key="d4">43</data>
+      <data key="d5">5.189655172413793</data>
+    </edge>
+    <edge source="SBSV" target="SBSP">
+      <data key="d4">820</data>
+      <data key="d5">98.9655172413793</data>
+    </edge>
+    <edge source="SBSV" target="SBVC">
+      <data key="d4">51</data>
+      <data key="d5">6.155172413793103</data>
+    </edge>
+    <edge source="SBSV" target="SBVT">
+      <data key="d4">35</data>
+      <data key="d5">4.224137931034482</data>
+    </edge>
+    <edge source="SBSV" target="SNCL">
+      <data key="d4">38</data>
+      <data key="d5">4.586206896551723</data>
+    </edge>
+    <edge source="SBTE" target="SBBE">
+      <data key="d4">55</data>
+      <data key="d5">6.637931034482758</data>
+    </edge>
+    <edge source="SBTE" target="SBBR">
+      <data key="d4">167</data>
+      <data key="d5">20.155172413793103</data>
+    </edge>
+    <edge source="SBTE" target="SBCF">
+      <data key="d4">29</data>
+      <data key="d5">3.4999999999999996</data>
+    </edge>
+    <edge source="SBTE" target="SBFZ">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBTE" target="SBGR">
+      <data key="d4">156</data>
+      <data key="d5">18.82758620689655</data>
+    </edge>
+    <edge source="SBTE" target="SBKP">
+      <data key="d4">42</data>
+      <data key="d5">5.068965517241379</data>
+    </edge>
+    <edge source="SBTE" target="SBRF">
+      <data key="d4">111</data>
+      <data key="d5">13.39655172413793</data>
+    </edge>
+    <edge source="SBTE" target="SBSL">
+      <data key="d4">8</data>
+      <data key="d5">0.9655172413793103</data>
+    </edge>
+    <edge source="SBVT" target="SBBR">
+      <data key="d4">108</data>
+      <data key="d5">13.034482758620689</data>
+    </edge>
+    <edge source="SBVT" target="SBCF">
+      <data key="d4">272</data>
+      <data key="d5">32.82758620689655</data>
+    </edge>
+    <edge source="SBVT" target="SBGL">
+      <data key="d4">332</data>
+      <data key="d5">40.068965517241374</data>
+    </edge>
+    <edge source="SBVT" target="SBGR">
+      <data key="d4">368</data>
+      <data key="d5">44.41379310344827</data>
+    </edge>
+    <edge source="SBVT" target="SBKP">
+      <data key="d4">206</data>
+      <data key="d5">24.86206896551724</data>
+    </edge>
+    <edge source="SBVT" target="SBPS">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBVT" target="SBRF">
+      <data key="d4">57</data>
+      <data key="d5">6.879310344827585</data>
+    </edge>
+    <edge source="SBVT" target="SBSP">
+      <data key="d4">440</data>
+      <data key="d5">53.103448275862064</data>
+    </edge>
+    <edge source="SBVT" target="SBSV">
+      <data key="d4">36</data>
+      <data key="d5">4.344827586206896</data>
+    </edge>
+    <edge source="SBBW" target="SBCY">
+      <data key="d4">36</data>
+      <data key="d5">4.344827586206896</data>
+    </edge>
+    <edge source="SBCA" target="SBCT">
+      <data key="d4">45</data>
+      <data key="d5">5.43103448275862</data>
+    </edge>
+    <edge source="SBCA" target="SBGR">
+      <data key="d4">134</data>
+      <data key="d5">16.17241379310345</data>
+    </edge>
+    <edge source="SBCA" target="SBKP">
+      <data key="d4">107</data>
+      <data key="d5">12.913793103448274</data>
+    </edge>
+    <edge source="SBCA" target="SBSP">
+      <data key="d4">23</data>
+      <data key="d5">2.775862068965517</data>
+    </edge>
+    <edge source="SBCB" target="SBCF">
+      <data key="d4">56</data>
+      <data key="d5">6.758620689655172</data>
+    </edge>
+    <edge source="SBCN" target="SBCF">
+      <data key="d4">16</data>
+      <data key="d5">1.9310344827586206</data>
+    </edge>
+    <edge source="SBCN" target="SBSP">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBFI" target="SBCF">
+      <data key="d4">8</data>
+      <data key="d5">0.9655172413793103</data>
+    </edge>
+    <edge source="SBFI" target="SBCT">
+      <data key="d4">181</data>
+      <data key="d5">21.844827586206893</data>
+    </edge>
+    <edge source="SBFI" target="SBFL">
+      <data key="d4">54</data>
+      <data key="d5">6.517241379310344</data>
+    </edge>
+    <edge source="SBFI" target="SBGL">
+      <data key="d4">147</data>
+      <data key="d5">17.741379310344826</data>
+    </edge>
+    <edge source="SBFI" target="SBGR">
+      <data key="d4">397</data>
+      <data key="d5">47.91379310344827</data>
+    </edge>
+    <edge source="SBFI" target="SBKP">
+      <data key="d4">113</data>
+      <data key="d5">13.637931034482758</data>
+    </edge>
+    <edge source="SBFI" target="SBSP">
+      <data key="d4">116</data>
+      <data key="d5">13.999999999999998</data>
+    </edge>
+    <edge source="SBGV" target="SBCF">
+      <data key="d4">120</data>
+      <data key="d5">14.482758620689653</data>
+    </edge>
+    <edge source="SBIL" target="SBCF">
+      <data key="d4">67</data>
+      <data key="d5">8.086206896551724</data>
+    </edge>
+    <edge source="SBIL" target="SBGR">
+      <data key="d4">129</data>
+      <data key="d5">15.568965517241377</data>
+    </edge>
+    <edge source="SBIL" target="SBKP">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBIL" target="SBSP">
+      <data key="d4">90</data>
+      <data key="d5">10.86206896551724</data>
+    </edge>
+    <edge source="SBIL" target="SBSV">
+      <data key="d4">19</data>
+      <data key="d5">2.2931034482758617</data>
+    </edge>
+    <edge source="SBIP" target="SBCF">
+      <data key="d4">175</data>
+      <data key="d5">21.120689655172413</data>
+    </edge>
+    <edge source="SBIP" target="SBSP">
+      <data key="d4">57</data>
+      <data key="d5">6.879310344827585</data>
+    </edge>
+    <edge source="SBJE" target="SBFZ">
+      <data key="d4">21</data>
+      <data key="d5">2.5344827586206895</data>
+    </edge>
+    <edge source="SBJE" target="SBGR">
+      <data key="d4">83</data>
+      <data key="d5">10.017241379310343</data>
+    </edge>
+    <edge source="SBJE" target="SBPB">
+      <data key="d4">37</data>
+      <data key="d5">4.46551724137931</data>
+    </edge>
+    <edge source="SBKG" target="SBCF">
+      <data key="d4">53</data>
+      <data key="d5">6.396551724137931</data>
+    </edge>
+    <edge source="SBKG" target="SBFZ">
+      <data key="d4">72</data>
+      <data key="d5">8.689655172413792</data>
+    </edge>
+    <edge source="SBKG" target="SBGL">
+      <data key="d4">38</data>
+      <data key="d5">4.586206896551723</data>
+    </edge>
+    <edge source="SBKG" target="SBRF">
+      <data key="d4">140</data>
+      <data key="d5">16.89655172413793</data>
+    </edge>
+    <edge source="SBKG" target="SBSV">
+      <data key="d4">92</data>
+      <data key="d5">11.103448275862068</data>
+    </edge>
+    <edge source="SBLE" target="SBCF">
+      <data key="d4">16</data>
+      <data key="d5">1.9310344827586206</data>
+    </edge>
+    <edge source="SBMK" target="SBCF">
+      <data key="d4">239</data>
+      <data key="d5">28.844827586206893</data>
+    </edge>
+    <edge source="SBMK" target="SBGR">
+      <data key="d4">91</data>
+      <data key="d5">10.982758620689655</data>
+    </edge>
+    <edge source="SBMK" target="SBPS">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBMK" target="SBSP">
+      <data key="d4">50</data>
+      <data key="d5">6.0344827586206895</data>
+    </edge>
+    <edge source="SBTC" target="SBCF">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBTC" target="SBSP">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBUL" target="SBCF">
+      <data key="d4">257</data>
+      <data key="d5">31.01724137931034</data>
+    </edge>
+    <edge source="SBUL" target="SBFZ">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBUL" target="SBGR">
+      <data key="d4">204</data>
+      <data key="d5">24.620689655172413</data>
+    </edge>
+    <edge source="SBUL" target="SBJP">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBUL" target="SBKP">
+      <data key="d4">184</data>
+      <data key="d5">22.206896551724135</data>
+    </edge>
+    <edge source="SBUL" target="SBMO">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBUL" target="SBPS">
+      <data key="d4">10</data>
+      <data key="d5">1.206896551724138</data>
+    </edge>
+    <edge source="SBUL" target="SBRF">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBUL" target="SBSG">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBUL" target="SBSP">
+      <data key="d4">147</data>
+      <data key="d5">17.741379310344826</data>
+    </edge>
+    <edge source="SBVC" target="SBCF">
+      <data key="d4">46</data>
+      <data key="d5">5.551724137931034</data>
+    </edge>
+    <edge source="SBVC" target="SBGR">
+      <data key="d4">164</data>
+      <data key="d5">19.79310344827586</data>
+    </edge>
+    <edge source="SBVC" target="SBSV">
+      <data key="d4">52</data>
+      <data key="d5">6.275862068965517</data>
+    </edge>
+    <edge source="SBVG" target="SBCF">
+      <data key="d4">45</data>
+      <data key="d5">5.43103448275862</data>
+    </edge>
+    <edge source="SBZM" target="SBCF">
+      <data key="d4">44</data>
+      <data key="d5">5.310344827586206</data>
+    </edge>
+    <edge source="SBZM" target="SBGR">
+      <data key="d4">112</data>
+      <data key="d5">13.517241379310343</data>
+    </edge>
+    <edge source="SBZM" target="SBKP">
+      <data key="d4">69</data>
+      <data key="d5">8.327586206896552</data>
+    </edge>
+    <edge source="SBZM" target="SBSP">
+      <data key="d4">75</data>
+      <data key="d5">9.051724137931034</data>
+    </edge>
+    <edge source="SNBR" target="SBCF">
+      <data key="d4">88</data>
+      <data key="d5">10.620689655172413</data>
+    </edge>
+    <edge source="SNGI" target="SBCF">
+      <data key="d4">53</data>
+      <data key="d5">6.396551724137931</data>
+    </edge>
+    <edge source="SNJM" target="SBCF">
+      <data key="d4">30</data>
+      <data key="d5">3.6206896551724133</data>
+    </edge>
+    <edge source="SNLN" target="SBCF">
+      <data key="d4">53</data>
+      <data key="d5">6.396551724137931</data>
+    </edge>
+    <edge source="SNPD" target="SBUL">
+      <data key="d4">24</data>
+      <data key="d5">2.8965517241379306</data>
+    </edge>
+    <edge source="SNSS" target="SBCF">
+      <data key="d4">23</data>
+      <data key="d5">2.775862068965517</data>
+    </edge>
+    <edge source="SNTO" target="SBCF">
+      <data key="d4">54</data>
+      <data key="d5">6.517241379310344</data>
+    </edge>
+    <edge source="SNZR" target="SBCF">
+      <data key="d4">24</data>
+      <data key="d5">2.8965517241379306</data>
+    </edge>
+    <edge source="SBCH" target="SBFL">
+      <data key="d4">46</data>
+      <data key="d5">5.551724137931034</data>
+    </edge>
+    <edge source="SBCH" target="SBGR">
+      <data key="d4">132</data>
+      <data key="d5">15.93103448275862</data>
+    </edge>
+    <edge source="SBCH" target="SBKP">
+      <data key="d4">128</data>
+      <data key="d5">15.448275862068964</data>
+    </edge>
+    <edge source="SBCH" target="SBSP">
+      <data key="d4">45</data>
+      <data key="d5">5.43103448275862</data>
+    </edge>
+    <edge source="SDOW" target="SBCJ">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBCO" target="SBGR">
+      <data key="d4">75</data>
+      <data key="d5">9.051724137931034</data>
+    </edge>
+    <edge source="SBCO" target="SBKP">
+      <data key="d4">59</data>
+      <data key="d5">7.120689655172413</data>
+    </edge>
+    <edge source="SBCO" target="SBSP">
+      <data key="d4">24</data>
+      <data key="d5">2.8965517241379306</data>
+    </edge>
+    <edge source="SBCP" target="SBKP">
+      <data key="d4">52</data>
+      <data key="d5">6.275862068965517</data>
+    </edge>
+    <edge source="SBCR" target="SBDB">
+      <data key="d4">32</data>
+      <data key="d5">3.862068965517241</data>
+    </edge>
+    <edge source="SBDB" target="SBKP">
+      <data key="d4">33</data>
+      <data key="d5">3.982758620689655</data>
+    </edge>
+    <edge source="SBDB" target="SBSP">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBLO" target="SBCT">
+      <data key="d4">94</data>
+      <data key="d5">11.344827586206895</data>
+    </edge>
+    <edge source="SBLO" target="SBGR">
+      <data key="d4">229</data>
+      <data key="d5">27.637931034482754</data>
+    </edge>
+    <edge source="SBLO" target="SBKP">
+      <data key="d4">204</data>
+      <data key="d5">24.620689655172413</data>
+    </edge>
+    <edge source="SBLO" target="SBSP">
+      <data key="d4">146</data>
+      <data key="d5">17.620689655172413</data>
+    </edge>
+    <edge source="SBMG" target="SBCT">
+      <data key="d4">99</data>
+      <data key="d5">11.948275862068964</data>
+    </edge>
+    <edge source="SBMG" target="SBGR">
+      <data key="d4">223</data>
+      <data key="d5">26.913793103448274</data>
+    </edge>
+    <edge source="SBMG" target="SBKP">
+      <data key="d4">141</data>
+      <data key="d5">17.01724137931034</data>
+    </edge>
+    <edge source="SBMG" target="SBSP">
+      <data key="d4">103</data>
+      <data key="d5">12.43103448275862</data>
+    </edge>
+    <edge source="SBPO" target="SBCT">
+      <data key="d4">20</data>
+      <data key="d5">2.413793103448276</data>
+    </edge>
+    <edge source="SBUG" target="SBCT">
+      <data key="d4">10</data>
+      <data key="d5">1.206896551724138</data>
+    </edge>
+    <edge source="SSGY" target="SBCT">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SSUM" target="SBCT">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SSUV" target="SBCT">
+      <data key="d4">12</data>
+      <data key="d5">1.4482758620689653</data>
+    </edge>
+    <edge source="SSVL" target="SBCT">
+      <data key="d4">12</data>
+      <data key="d5">1.4482758620689653</data>
+    </edge>
+    <edge source="SBCX" target="SBGL">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBCX" target="SBGR">
+      <data key="d4">88</data>
+      <data key="d5">10.620689655172413</data>
+    </edge>
+    <edge source="SBCX" target="SBKP">
+      <data key="d4">52</data>
+      <data key="d5">6.275862068965517</data>
+    </edge>
+    <edge source="SBCX" target="SBSP">
+      <data key="d4">100</data>
+      <data key="d5">12.068965517241379</data>
+    </edge>
+    <edge source="SBJI" target="SBCY">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBJI" target="SBPV">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBSO" target="SBCY">
+      <data key="d4">38</data>
+      <data key="d5">4.586206896551723</data>
+    </edge>
+    <edge source="SBVH" target="SBCY">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SSKW" target="SBCY">
+      <data key="d4">16</data>
+      <data key="d5">1.9310344827586206</data>
+    </edge>
+    <edge source="SSOU" target="SBCY">
+      <data key="d4">21</data>
+      <data key="d5">2.5344827586206895</data>
+    </edge>
+    <edge source="SSOU" target="SWJN">
+      <data key="d4">12</data>
+      <data key="d5">1.4482758620689653</data>
+    </edge>
+    <edge source="SBCZ" target="SBRB">
+      <data key="d4">31</data>
+      <data key="d5">3.7413793103448274</data>
+    </edge>
+    <edge source="SBDN" target="SBGR">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBDN" target="SBKP">
+      <data key="d4">163</data>
+      <data key="d5">19.672413793103445</data>
+    </edge>
+    <edge source="SBDN" target="SBPS">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBDN" target="SBSG">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBDN" target="SBSP">
+      <data key="d4">163</data>
+      <data key="d5">19.672413793103445</data>
+    </edge>
+    <edge source="SBIH" target="SBEG">
+      <data key="d4">30</data>
+      <data key="d5">3.6206896551724133</data>
+    </edge>
+    <edge source="SBMY" target="SBEG">
+      <data key="d4">32</data>
+      <data key="d5">3.862068965517241</data>
+    </edge>
+    <edge source="SBTB" target="SBSN">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBTB" target="SNOX">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBTF" target="SBEG">
+      <data key="d4">46</data>
+      <data key="d5">5.551724137931034</data>
+    </edge>
+    <edge source="SBTT" target="SBEG">
+      <data key="d4">72</data>
+      <data key="d5">8.689655172413792</data>
+    </edge>
+    <edge source="SBUA" target="SBEG">
+      <data key="d4">16</data>
+      <data key="d5">1.9310344827586206</data>
+    </edge>
+    <edge source="SWBC" target="SBEG">
+      <data key="d4">10</data>
+      <data key="d5">1.206896551724138</data>
+    </edge>
+    <edge source="SWBR" target="SBEG">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SWEI" target="SBTT">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SWKO" target="SBEG">
+      <data key="d4">61</data>
+      <data key="d5">7.362068965517241</data>
+    </edge>
+    <edge source="SWKO" target="SWTP">
+      <data key="d4">13</data>
+      <data key="d5">1.5689655172413792</data>
+    </edge>
+    <edge source="SWLB" target="SWKO">
+      <data key="d4">20</data>
+      <data key="d5">2.413793103448276</data>
+    </edge>
+    <edge source="SWMW" target="SBEG">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SWPI" target="SBEG">
+      <data key="d4">79</data>
+      <data key="d5">9.534482758620689</data>
+    </edge>
+    <edge source="SWYN" target="SBMY">
+      <data key="d4">13</data>
+      <data key="d5">1.5689655172413792</data>
+    </edge>
+    <edge source="SBPK" target="SBFL">
+      <data key="d4">10</data>
+      <data key="d5">1.206896551724138</data>
+    </edge>
+    <edge source="SBPK" target="SBGR">
+      <data key="d4">27</data>
+      <data key="d5">3.258620689655172</data>
+    </edge>
+    <edge source="SBPK" target="SBKP">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBSM" target="SBFL">
+      <data key="d4">10</data>
+      <data key="d5">1.206896551724138</data>
+    </edge>
+    <edge source="SBSM" target="SBKP">
+      <data key="d4">17</data>
+      <data key="d5">2.0517241379310343</data>
+    </edge>
+    <edge source="SBFN" target="SBFZ">
+      <data key="d4">24</data>
+      <data key="d5">2.8965517241379306</data>
+    </edge>
+    <edge source="SBFN" target="SBRF">
+      <data key="d4">319</data>
+      <data key="d5">38.5</data>
+    </edge>
+    <edge source="SBFN" target="SBSG">
+      <data key="d4">33</data>
+      <data key="d5">3.982758620689655</data>
+    </edge>
+    <edge source="SBMS" target="SBFZ">
+      <data key="d4">29</data>
+      <data key="d5">3.4999999999999996</data>
+    </edge>
+    <edge source="SBMS" target="SBRF">
+      <data key="d4">53</data>
+      <data key="d5">6.396551724137931</data>
+    </edge>
+    <edge source="SBMS" target="SBSG">
+      <data key="d4">29</data>
+      <data key="d5">3.4999999999999996</data>
+    </edge>
+    <edge source="SN6L" target="SWBE">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SNIG" target="SNWS">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBNF" target="SBGL">
+      <data key="d4">60</data>
+      <data key="d5">7.2413793103448265</data>
+    </edge>
+    <edge source="SBNF" target="SBGR">
+      <data key="d4">377</data>
+      <data key="d5">45.49999999999999</data>
+    </edge>
+    <edge source="SBNF" target="SBKP">
+      <data key="d4">246</data>
+      <data key="d5">29.68965517241379</data>
+    </edge>
+    <edge source="SBNF" target="SBSP">
+      <data key="d4">541</data>
+      <data key="d5">65.29310344827586</data>
+    </edge>
+    <edge source="SBSJ" target="SBGL">
+      <data key="d4">25</data>
+      <data key="d5">3.0172413793103448</data>
+    </edge>
+    <edge source="SBJA" target="SBGR">
+      <data key="d4">74</data>
+      <data key="d5">8.93103448275862</data>
+    </edge>
+    <edge source="SBJA" target="SBKP">
+      <data key="d4">44</data>
+      <data key="d5">5.310344827586206</data>
+    </edge>
+    <edge source="SBJV" target="SBGR">
+      <data key="d4">115</data>
+      <data key="d5">13.879310344827585</data>
+    </edge>
+    <edge source="SBJV" target="SBKP">
+      <data key="d4">161</data>
+      <data key="d5">19.43103448275862</data>
+    </edge>
+    <edge source="SBJV" target="SBSP">
+      <data key="d4">165</data>
+      <data key="d5">19.913793103448274</data>
+    </edge>
+    <edge source="SBNM" target="SBGR">
+      <data key="d4">22</data>
+      <data key="d5">2.655172413793103</data>
+    </edge>
+    <edge source="SBNM" target="SBKP">
+      <data key="d4">16</data>
+      <data key="d5">1.9310344827586206</data>
+    </edge>
+    <edge source="SBPF" target="SBGR">
+      <data key="d4">100</data>
+      <data key="d5">12.068965517241379</data>
+    </edge>
+    <edge source="SBPF" target="SBKP">
+      <data key="d4">58</data>
+      <data key="d5">6.999999999999999</data>
+    </edge>
+    <edge source="SBPL" target="SBGR">
+      <data key="d4">156</data>
+      <data key="d5">18.82758620689655</data>
+    </edge>
+    <edge source="SBPL" target="SBJU">
+      <data key="d4">25</data>
+      <data key="d5">3.0172413793103448</data>
+    </edge>
+    <edge source="SBPL" target="SBKP">
+      <data key="d4">26</data>
+      <data key="d5">3.1379310344827585</data>
+    </edge>
+    <edge source="SBPL" target="SBRF">
+      <data key="d4">129</data>
+      <data key="d5">15.568965517241377</data>
+    </edge>
+    <edge source="SBRP" target="SBGR">
+      <data key="d4">172</data>
+      <data key="d5">20.75862068965517</data>
+    </edge>
+    <edge source="SBRP" target="SBKP">
+      <data key="d4">248</data>
+      <data key="d5">29.93103448275862</data>
+    </edge>
+    <edge source="SBRP" target="SBMO">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBRP" target="SBPS">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBRP" target="SBRF">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBRP" target="SBRJ">
+      <data key="d4">50</data>
+      <data key="d5">6.0344827586206895</data>
+    </edge>
+    <edge source="SBRP" target="SBSG">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBRP" target="SBSP">
+      <data key="d4">232</data>
+      <data key="d5">27.999999999999996</data>
+    </edge>
+    <edge source="SBSR" target="SBGR">
+      <data key="d4">139</data>
+      <data key="d5">16.775862068965516</data>
+    </edge>
+    <edge source="SBSR" target="SBKP">
+      <data key="d4">256</data>
+      <data key="d5">30.89655172413793</data>
+    </edge>
+    <edge source="SBSR" target="SBMO">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBSR" target="SBPS">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBSR" target="SBRF">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBSR" target="SBSG">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SBSR" target="SBSP">
+      <data key="d4">164</data>
+      <data key="d5">19.79310344827586</data>
+    </edge>
+    <edge source="SWLC" target="SBGR">
+      <data key="d4">54</data>
+      <data key="d5">6.517241379310344</data>
+    </edge>
+    <edge source="SWLC" target="SBKP">
+      <data key="d4">60</data>
+      <data key="d5">7.2413793103448265</data>
+    </edge>
+    <edge source="SBPB" target="SBCF">
+      <data key="d4">16</data>
+      <data key="d5">1.9310344827586206</data>
+    </edge>
+    <edge source="SBPB" target="SBJE">
+      <data key="d4">22</data>
+      <data key="d5">2.655172413793103</data>
+    </edge>
+    <edge source="SBPB" target="SSRS">
+      <data key="d4">19</data>
+      <data key="d5">2.2931034482758617</data>
+    </edge>
+    <edge source="SBJR" target="SBKP">
+      <data key="d4">40</data>
+      <data key="d5">4.827586206896552</data>
+    </edge>
+    <edge source="SBJR" target="SBSP">
+      <data key="d4">318</data>
+      <data key="d5">38.37931034482758</data>
+    </edge>
+    <edge source="SBML" target="SBKP">
+      <data key="d4">94</data>
+      <data key="d5">11.344827586206895</data>
+    </edge>
+    <edge source="SBPG" target="SBKP">
+      <data key="d4">30</data>
+      <data key="d5">3.6206896551724133</data>
+    </edge>
+    <edge source="SBPP" target="SBKP">
+      <data key="d4">33</data>
+      <data key="d5">3.982758620689655</data>
+    </edge>
+    <edge source="SBRD" target="SBKP">
+      <data key="d4">37</data>
+      <data key="d5">4.46551724137931</data>
+    </edge>
+    <edge source="SBTG" target="SBKP">
+      <data key="d4">44</data>
+      <data key="d5">5.310344827586206</data>
+    </edge>
+    <edge source="SNCP" target="SBKP">
+      <data key="d4">32</data>
+      <data key="d5">3.862068965517241</data>
+    </edge>
+    <edge source="SSGG" target="SBKP">
+      <data key="d4">29</data>
+      <data key="d5">3.4999999999999996</data>
+    </edge>
+    <edge source="SNYA" target="SNMZ">
+      <data key="d4">10</data>
+      <data key="d5">1.206896551724138</data>
+    </edge>
+    <edge source="SSRS" target="SBPB">
+      <data key="d4">21</data>
+      <data key="d5">2.5344827586206895</data>
+    </edge>
+    <edge source="SSRS" target="SBSL">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SBUF" target="SBRF">
+      <data key="d4">22</data>
+      <data key="d5">2.655172413793103</data>
+    </edge>
+    <edge source="SDIY" target="SBRF">
+      <data key="d4">32</data>
+      <data key="d5">3.862068965517241</data>
+    </edge>
+    <edge source="SJZA" target="SBRF">
+      <data key="d4">24</data>
+      <data key="d5">2.8965517241379306</data>
+    </edge>
+    <edge source="SNAB" target="SBRF">
+      <data key="d4">18</data>
+      <data key="d5">2.172413793103448</data>
+    </edge>
+    <edge source="SNGN" target="SBRF">
+      <data key="d4">21</data>
+      <data key="d5">2.5344827586206895</data>
+    </edge>
+    <edge source="SNHS" target="SBRF">
+      <data key="d4">30</data>
+      <data key="d5">3.6206896551724133</data>
+    </edge>
+    <edge source="SNRU" target="SBRF">
+      <data key="d4">38</data>
+      <data key="d5">4.586206896551723</data>
+    </edge>
+    <edge source="SNTS" target="SBRF">
+      <data key="d4">50</data>
+      <data key="d5">6.0344827586206895</data>
+    </edge>
+    <edge source="SWKQ" target="SBPL">
+      <data key="d4">14</data>
+      <data key="d5">1.689655172413793</data>
+    </edge>
+    <edge source="SNCL" target="SBSV">
+      <data key="d4">38</data>
+      <data key="d5">4.586206896551723</data>
+    </edge>
+    <edge source="SNOX" target="SNMA">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SWBE" target="SBFZ">
+      <data key="d4">13</data>
+      <data key="d5">1.5689655172413792</data>
+    </edge>
+    <edge source="SNWS" target="SBFZ">
+      <data key="d4">11</data>
+      <data key="d5">1.3275862068965516</data>
+    </edge>
+    <edge source="SNMA" target="SBSN">
+      <data key="d4">9</data>
+      <data key="d5">1.086206896551724</data>
+    </edge>
+    <edge source="SNMZ" target="SBBE">
+      <data key="d4">20</data>
+      <data key="d5">2.413793103448276</data>
+    </edge>
+    <edge source="SWJN" target="SBCY">
+      <data key="d4">11</data>
+      <data key="d5">1.3275862068965516</data>
+    </edge>
+    <edge source="SWTP" target="SWKO">
+      <data key="d4">13</data>
+      <data key="d5">1.5689655172413792</data>
+    </edge>
+    <data key="d0">2024-05-04</data>
+    <data key="d1">2024-06-30</data>
+    <data key="d2">1.0</data>
+  </graph>
+</graphml>
