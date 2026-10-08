@@ -11,22 +11,26 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "src"))
 
-from rede import carregar_grafo_vra  # noqa: E402
+from rede import JANELAS, construir_grafo, ler_voos_vra  # noqa: E402
 
 PASTA_DADOS = RAIZ / "data" / "raw"
 ARQUIVOS = ["VRA_2024_04.csv", "VRA_2024_05.csv", "VRA_2024_06.csv"]
 
 
 def main() -> int:
-    for nome in ARQUIVOS:
-        caminho = PASTA_DADOS / nome
-        if not caminho.exists():
-            print(f"Arquivo {caminho} não encontrado! Execute primeiro o script scripts/baixar_dados.py")
-            return 1
+    caminhos = [PASTA_DADOS / nome for nome in ARQUIVOS]
+    faltando = [c for c in caminhos if not c.exists()]
+    if faltando:
+        print(f"Arquivos não encontrados: {[c.name for c in faltando]}. Execute primeiro scripts/baixar_dados.py")
+        return 1
 
-        G = carregar_grafo_vra(caminho, limiar_frequencia=4)
+    voos = ler_voos_vra(caminhos)
+    print(f"Voos domésticos regulares realizados: {len(voos)}")
 
-        print(f"\n--- {nome} ---")
+    for nome, (inicio, fim) in JANELAS.items():
+        G = construir_grafo(voos, inicio, fim)
+
+        print(f"\n--- {nome}: {inicio} a {fim} ---")
         print(f"Total de Aeroportos (Nós): {G.number_of_nodes()}")
         print(f"Total de Rotas (Arestas): {G.number_of_edges()}")
         print("5 aeroportos mais conectados (grau total):")

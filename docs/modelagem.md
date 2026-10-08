@@ -1,6 +1,6 @@
 # Modelagem
 
-Este documento registra como os dados da VRA viram um grafo e por que cada escolha foi feita. Decisões marcadas como **proposta** ainda precisam ser confirmadas; as marcadas como **pendente no código** já foram decididas, mas `src/rede.py` ainda não as implementa.
+Este documento registra como os dados da VRA viram um grafo e por que cada escolha foi feita. Decisões marcadas como **proposta** ainda precisam ser confirmadas. As demais já estão implementadas em `src/rede.py`.
 
 Os números abaixo foram medidos nos arquivos de abril a junho de 2024.
 
@@ -11,7 +11,7 @@ Os números abaixo foram medidos nos arquivos de abril a junho de 2024.
 | Nó | Aeroporto, identificado pelo código ICAO (ex.: SBSG, Governador Aluízio Alves, em Natal) | O fechamento acontece num aeroporto, não numa cidade. O ICAO é único e está presente em todas as linhas da VRA. |
 | Aresta | Rota de A para B com voos na janela, acima do limiar de frequência | Representa uma ligação aérea que o passageiro consegue usar com regularidade. |
 | Direção | Dirigido | Algumas rotas não são simétricas (ida por um aeroporto, volta por outro). Para medidas que não dependem de direção, usamos a versão não dirigida. |
-| Peso | Frequência média semanal (voos na janela / semanas da janela) | Normalizar por semana permite comparar janelas de tamanhos diferentes (abril tem 30 dias; maio e junho, 59). |
+| Peso | Frequência média semanal (voos na janela / semanas da janela) | Normalizar por semana permite comparar janelas de tamanhos diferentes (abril tem 30 dias; a janela pós-fechamento, 58). |
 
 **Atenção:** o peso é força da ligação, não distância. Para caminhos e escalas usamos o grafo sem peso (BFS). Se algum cálculo precisar de distância ponderada, usamos `1 / peso`.
 
@@ -21,11 +21,11 @@ Os números abaixo foram medidos nos arquivos de abril a junho de 2024.
 |---|---|---|---|
 | `Situação Voo` | `REALIZADO` | remove cerca de 4% dos voos (cancelados) | A malha que interessa é a que de fato operou. |
 | `Código Tipo Linha` | `N` (Doméstica Mista) | remove internacionais (`I`, `G`) e cargueiros domésticos (`C`) | O escopo é da malha doméstica de passageiros. |
-| `Código DI` | `0`, `4` ou `C` (grupo "Regular") **pendente no código** | remove cerca de 2,5% dos voos `N` realizados (extras, charters, fretamentos, retornos, voos não remunerados) | O problema trata da malha regular. Voos de retorno (`3`) e não remunerados (`6`) nem levam passageiros pagantes. |
+| `Código DI` | `0`, `4` ou `C` (grupo "Regular") | remove cerca de 2,5% dos voos `N` realizados (extras, charters, fretamentos, retornos, voos não remunerados) | O problema trata da malha regular. Voos de retorno (`3`) e não remunerados (`6`) nem levam passageiros pagantes. |
 
 Segundo a ANAC, o grupo "Regular" reúne os DIs 0, 4 e C. No período estudado aparecem 0 (cerca de 182,7 mil voos), 4 (349) e nenhum C.
 
-## 3. Janelas temporais **pendente no código**
+## 3. Janelas temporais
 
 O recorte é feito pela data da **partida real** de cada voo, e não pelo arquivo mensal.
 
@@ -40,22 +40,22 @@ Na janela pós-fechamento, SBPA tem um único voo regular registrado (22/06), qu
 
 ## 4. Limiar de frequência **proposta**
 
-**Proposta:** manter uma rota se ela tiver em média **pelo menos 1 voo por semana** (cerca de 4 por mês), nas duas janelas.
+**Proposta:** manter uma rota se ela tiver em média **pelo menos 1 voo por semana**, nas duas janelas.
+
+Como o corte é aplicado: uma rota com frequência de X voos por semana sempre tem pelo menos piso(X × semanas da janela) voos na janela. Abril tem 4,3 semanas, então um voo semanal acontece 4 ou 5 vezes, conforme o dia da semana. Exigir 4,3 voos (5, na prática) eliminaria cerca de 50 rotas semanais legítimas. Por isso o corte é de **4 voos em abril** e **8 voos na janela pós-fechamento** (8,3 semanas).
 
 Efeito do limiar (grafo dirigido, filtros da seção 2):
 
-| Limiar (voos/mês) | Abril: nós / arestas / maior SCC | Pós-fechamento: nós / arestas / maior SCC |
-|---|---|---|
-| 1 | 162 / 877 / 157 | 158 / 877 / 157 |
-| 2 | 157 / 840 / 157 | 157 / 836 / 155 |
-| **4** | **154 / 816 / 153** | **155 / 811 / 154** |
-| 8 | 143 / 732 / 136 | 133 / 713 / 130 |
-| 15 | 108 / 617 / 104 | 103 / 596 / 100 |
-| 30 | 74 / 449 / 73 | 72 / 428 / 69 |
+| Limiar (voos/semana) | Corte em abril / pós | Abril: nós / arestas / maior SCC | Pós-fechamento: nós / arestas / maior SCC |
+|---|---|---|---|
+| 0,25 | 1 / 2 voos | 162 / 877 / 157 | 157 / 857 / 156 |
+| 0,5 | 2 / 4 voos | 157 / 840 / 157 | 156 / 825 / 154 |
+| **1** | **4 / 8 voos** | **154 / 816 / 153** | **153 / 806 / 153** |
+| 2 | 8 / 16 voos | 143 / 732 / 136 | 132 / 712 / 130 |
+| 3,5 | 15 / 29 voos | 108 / 617 / 104 | 103 / 600 / 100 |
+| 7 | 30 / 58 voos | 74 / 449 / 73 | 72 / 428 / 69 |
 
-Até 4 voos por mês a rede quase não muda: o limiar só remove voos esporádicos. A partir de 8, aeroportos regionais começam a sair, e o resultado passa a depender do limiar. Por isso 4 é o valor principal e **2 e 8 entram na análise de sensibilidade**.
-
-Na janela pós-fechamento (59 dias), o limiar é aplicado sobre a frequência semanal, e não sobre o total da janela. Caso contrário, uma janela de dois meses deixaria passar rotas com metade da frequência.
+Até 1 voo por semana a rede quase não muda: o limiar só remove voos esporádicos. A partir de 2 por semana, aeroportos regionais começam a sair, e o resultado passa a depender do limiar. Por isso 1 por semana é o valor principal e **0,5 e 2 entram na análise de sensibilidade**.
 
 ## 5. Aeroportos da mesma cidade **proposta**
 
