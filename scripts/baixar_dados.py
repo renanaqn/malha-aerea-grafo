@@ -11,7 +11,6 @@ Uso:
 
 import argparse
 import shutil
-import ssl
 import sys
 import urllib.request
 from pathlib import Path
@@ -52,12 +51,9 @@ def baixar_mes(ano: int, mes: int, forcar: bool = False) -> Path:
     url = URL_BASE.format(ano=ano, mes=mes)
     temporario = destino.with_suffix(".part")
     print(f"[..] baixando {url}")
-
-    # 2. CRIE O CONTEXTO SSL QUE IGNORA A VALIDAÇÃO DO CERTIFICADO EXPIRADO
-    contexto_ssl = ssl._create_unverified_context()
-
-    # 3. PASSE O CONTEXTO NA CHAMADA DO urlopen
-    with urllib.request.urlopen(url, timeout=120, context=contexto_ssl) as resposta, open(temporario, "wb") as f:
+    # se der CERTIFICATE_VERIFY_FAILED, o problema é o Python local sem certificados raiz
+    # (ex.: Python do MSYS2). Use um .venv criado com o Python do python.org.
+    with urllib.request.urlopen(url, timeout=120) as resposta, open(temporario, "wb") as f:
         shutil.copyfileobj(resposta, f)
 
     # só substitui o arquivo final se o download terminou e o formato confere
