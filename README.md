@@ -19,24 +19,31 @@ Fechamentos de aeroportos por eventos climáticos (alagamentos, nevoeiro, tempes
 ## Conteúdo do curso utilizado
 | conceito | semana | onde apareceu | para que serviu|
 | --- | --- | --- | --- |
-| betweenness | 4 | analise.ipynb, cél. 12 | trechos criticos |
+| Grafo dirigido e ponderado | 2 | `src/rede.py`, `construir_grafo` | modelar rotas com sentido e frequência semanal |
+| Densidade | 2 | `src/metricas.py`, `resumo_rede`; `01_descricao_rede.ipynb`, seção 1 | mostrar que só 3,5% dos pares têm voo direto |
+| Grau e distribuição de grau | 2 | `src/metricas.py`, `tabela_graus`; `01_descricao_rede.ipynb`, seções 3 e 4 | medir a concentração em poucos hubs e comparar o ranking antes e depois de POA |
+| Matriz de adjacência | 2 | `01_descricao_rede.ipynb`, seção 6 | visualizar o bloco denso do núcleo e a periferia ligada a ele |
+| Grau de entrada e de saída | 3 | `src/metricas.py`, `tabela_graus`; `01_descricao_rede.ipynb`, seção 2 | verificar que a malha é quase simétrica |
+| Componentes (WCC, SCC) | 4 | `src/metricas.py`, `resumo_rede`; `01_descricao_rede.ipynb`, seção 5 | verificar a conectividade e achar aeroportos alcançáveis só em um sentido |
+| Caminhos, distâncias e diâmetro | 4 | `src/metricas.py`, `resumo_rede`; `01_descricao_rede.ipynb`, seção 5 | medir a linha de base de escalas antes dos fechamentos |
+| Triângulos e clustering | 4 | `src/metricas.py`, `resumo_rede`; `01_descricao_rede.ipynb`, seção 7 | mostrar onde há caminhos alternativos: clustering alto nos aeroportos médios e baixo nos hubs |
 
 ## Como executar
 
 Requer Python 3.13 (instalador do [python.org](https://www.python.org/downloads/)).
 
 ```bash
-# 1. criar e ativar o ambiente virtual
+# criar e ativar o ambiente virtual
 py -3.13 -m venv .venv            # Linux/macOS: python3.13 -m venv .venv
 .venv\Scripts\activate            # Linux/macOS: source .venv/bin/activate
 
-# 2. instalar as dependências
+# instalar as dependências
 pip install -r requirements.txt
 
-# 3. baixar os dados da ANAC (cerca de 75 MB, vão para data/raw/)
+# baixar os dados da ANAC (cerca de 75 MB, vão para data/raw/)
 python scripts/baixar_dados.py
 
-# 4. construir a rede
+# construir a rede
 python scripts/construir_rede.py
 ```
 

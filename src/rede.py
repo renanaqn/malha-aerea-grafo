@@ -107,3 +107,27 @@ def arestas_para_df(G: nx.DiGraph) -> pd.DataFrame:
 def carregar_grafo(caminho: Path) -> nx.DiGraph:
     """Carrega um grafo salvo em GraphML por scripts/construir_rede.py."""
     return nx.read_graphml(caminho)
+
+
+def nome_curto(G: nx.DiGraph, icao: str) -> str:
+    """Nome legível do aeroporto a partir da descrição da VRA.
+
+    'GOVERNADOR ALUIZIO ALVES - SÃO GONÇALO DO AMARANTE - RN - BRASIL'
+    vira 'Governador Aluizio Alves (RN)'.
+    """
+    if icao in NOMES_CURTOS:
+        return NOMES_CURTOS[icao]
+    partes = G.nodes[icao].get("nome", "").split(" - ")
+    if len(partes) < 3:
+        return icao
+    palavras = [p if p in PALAVRAS_MINUSCULAS else p.capitalize() for p in partes[0].lower().split()]
+    return f"{' '.join(palavras)} ({partes[-2]})"
+
+
+# descrições da VRA longas demais para tabelas e figuras
+NOMES_CURTOS = {
+    "SBGL": "Galeão (RJ)",
+    "SBBE": "Val de Cans (PA)",
+    "SBBR": "Brasília (DF)",
+}
+PALAVRAS_MINUSCULAS = {"de", "da", "do", "das", "dos", "e"}
