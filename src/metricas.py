@@ -132,9 +132,17 @@ def escalas_entre_capitais(G: nx.DiGraph, capitais: dict[str, list[str]]) -> pd.
     return matriz
 
 
-def eficiencia_global_dirigida(G: nx.DiGraph) -> float:
-    """Calcula a eficiência global da rede (Semana 4)."""
-    n = len(G)
+def eficiencia_global_dirigida(G: nx.DiGraph, n_referencia: int | None = None) -> float:
+    """Calcula a eficiência global da rede (Semana 4).
+
+    Média de 1/d sobre os n(n - 1) pares ordenados; pares sem caminho contam 0.
+
+    `n_referencia` fixa o n do denominador. Nas simulações de fechamento, passe o
+    número de aeroportos da rede original: os pares que envolvem aeroportos
+    removidos passam a contar como 0, e a eficiência não sobe artificialmente
+    só porque a rede ficou menor. Sem ele, n é o número de nós de G.
+    """
+    n = len(G) if n_referencia is None else n_referencia
     if n <= 1:
         return 0.0
     

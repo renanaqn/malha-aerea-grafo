@@ -4,6 +4,7 @@ As escolhas de filtros, janelas e limiar estão justificadas em docs/modelagem.m
 """
 
 import math
+import re
 from pathlib import Path
 
 import networkx as nx
@@ -151,8 +152,11 @@ def nome_curto(G: nx.DiGraph, icao: str) -> str:
     partes = G.nodes[icao].get("nome", "").split(" - ")
     if len(partes) < 3:
         return icao
-    palavras = [p if p in PALAVRAS_MINUSCULAS else p.capitalize() for p in partes[0].lower().split()]
-    return f"{' '.join(palavras)} ({partes[-2]})"
+    # maiúscula no início de cada palavra, inclusive depois de "/", "-" e "("
+    # ('SANTA GENOVEVA/GOIÂNIA' vira 'Santa Genoveva/Goiânia', 'JI-PARANÁ' vira 'Ji-Paraná')
+    nome = re.sub(r"(^|[\s/\-(])(\w)", lambda m: m.group(1) + m.group(2).upper(), partes[0].lower())
+    nome = re.sub(r"(?<= )(\w+)(?= )", lambda m: m.group(1).lower() if m.group(1).lower() in PALAVRAS_MINUSCULAS else m.group(1), nome)
+    return f"{nome} ({partes[-2]})"
 
 
 # descrições da VRA longas demais para tabelas e figuras
