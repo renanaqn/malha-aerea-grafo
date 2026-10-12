@@ -1,5 +1,8 @@
-# Estudo da Malha Áerea do Brasil
-Projeto da Unidade 1 de Algoritmos e Estrutura de Dados II.
+# Estudo da Malha Aérea do Brasil
+
+Projeto da Unidade 1 de Algoritmos e Estrutura de Dados II (DCA/UFRN), prof. Ivanovitch Silva.
+
+Quais aeroportos brasileiros, se fechados, mais desconectam a malha aérea doméstica ou mais aumentam as escalas entre as capitais? Modelamos a malha regular de 2024 como um grafo, simulamos fechamentos e comparamos a simulação com o fechamento real do Aeroporto Salgado Filho (Porto Alegre) nas enchentes de maio de 2024.
 
 ## Integrantes
 Marcelo · Renan de Aquino Pereira
@@ -9,12 +12,42 @@ Marcelo · Renan de Aquino Pereira
 ## Problema e Pergunta
 
 Fechamentos de aeroportos por eventos climáticos (alagamentos, nevoeiro, tempestades) ou falhas operacionais interrompem a malha aérea e afetam cidades que nem estão próximas do evento. Em maio de 2024, as enchentes no Rio Grande do Sul fecharam o Aeroporto Salgado Filho (Porto Alegre) por meses, um caso real desse tipo de problema.
- 
+
 **Pergunta principal:** quais aeroportos brasileiros, se fechados, mais desconectam a malha doméstica ou mais aumentam o número de escalas entre as capitais? E os aeroportos mais conectados (hubs) são os mesmos que os mais críticos como ponte?
 
-## Dados 
+**Hipóteses**
+
+- **H1.** A malha é robusta a falhas aleatórias e frágil a fechamentos direcionados.
+- **H2.** Existem aeroportos com betweenness alta e grau baixo ou médio, que funcionam como pontes regionais.
+- **H3.** A remoção adaptativa (recalculando a betweenness a cada fechamento) degrada a malha mais rápido que a remoção por grau.
+- **H4.** A simulação estática superestima o dano de fechar Porto Alegre, porque não captura a realocação de voos.
+
+Contexto, subperguntas, critérios de refutação de cada hipótese e escopo estão em [`docs/problema.md`](docs/problema.md).
+
+## Dados
+
+- **Fonte:** base VRA (Voo Regular Ativo) da ANAC, dados abertos, um CSV por mês ([portal](https://siros.anac.gov.br/siros/registros/diversos/vra/)). Cada linha é um voo, com origem, destino, empresa, horários previstos e reais, situação (realizado ou cancelado) e tipo de linha.
+- **Período:** abril, maio e junho de 2024 (cerca de 80 mil voos por mês, nacionais e internacionais).
+- **Filtros:** só voos **realizados**, **domésticos de passageiros** (tipo de linha `N`) e **regulares** (DI `0`, `4` ou `C`, conforme o dicionário da ANAC). Restam **183.029 voos**.
+- **Obtenção:** `scripts/baixar_dados.py` baixa os arquivos para `data/raw/` (não versionado). As redes prontas ficam em `data/processed/` (versionado), em GraphML e em CSV de arestas.
+
+Detalhes e justificativas dos filtros: [`docs/modelagem.md`](docs/modelagem.md), seção 2.
 
 ## Modelagem
+
+| Elemento | Escolha |
+|---|---|
+| Nó | aeroporto, pelo código ICAO |
+| Aresta | rota de A para B com **pelo menos 1 voo por semana** em média na janela |
+| Direção | dirigido (95% das rotas têm volta; medidas como k-core e clustering usam a versão não dirigida) |
+| Peso | frequência em voos por semana. **Frequência é força, não distância:** caminhos e escalas são calculados sem peso, por BFS |
+| Janelas | **referência:** 01/04 a 30/04/2024; **pós-fechamento:** 04/05 a 30/06/2024 (o último voo regular no Salgado Filho partiu em 03/05) |
+| Capitais | as 27 capitais e os aeroportos que as atendem; Rio de Janeiro (Galeão e Santos Dumont) e São Paulo (Guarulhos e Congonhas) usam o menor caminho entre seus aeroportos |
+| Fechamento | remoção de um nó e de todas as suas arestas |
+
+A rede de referência tem **154 aeroportos e 816 rotas**; a pós-fechamento, **153 aeroportos e 806 rotas**.
+
+Todas as decisões, a sensibilidade do limiar de frequência e a lista de capitais estão em [`docs/modelagem.md`](docs/modelagem.md).
 
 ## Conteúdo do curso utilizado
 | conceito | semana | onde apareceu | para que serviu|
@@ -72,7 +105,65 @@ Se o download falhar com `CERTIFICATE_VERIFY_FAILED`, o Python em uso não encon
 
 ## Resultados
 
+Cada notebook termina com a interpretação completa. Aqui está o resumo.
+
+| Notebook | O que responde |
+|---|---|
+| [`01_descricao_rede`](notebooks/01_descricao_rede.ipynb) | estrutura geral: densidade, distribuição de grau, componentes, clustering |
+| [`02_hipoteses_e_centralidades`](notebooks/02_hipoteses_e_centralidades.ipynb) | H2 (hubs vs pontes), núcleo-periferia (k-core), escalas entre capitais |
+| [`03_curvas_fechamento`](notebooks/03_curvas_fechamento.ipynb) | H1 e H3: como a malha se degrada sob fechamentos sucessivos |
+| [`04_aeroportos_criticos`](notebooks/04_aeroportos_criticos.ipynb) | **pergunta principal:** o impacto de fechar cada aeroporto sozinho |
+| [`05_poa_simulado_vs_real`](notebooks/05_poa_simulado_vs_real.ipynb) | H4: a simulação do fechamento de Porto Alegre contra a malha real |
+
+### Resposta à pergunta principal
+
+**Quem mais desconecta a malha são as portas regionais.** Fechar Confins, Manaus, Viracopos, Recife, Belém, Cuiabá ou Porto Alegre, um de cada vez, tira de 8% a 16% da eficiência da malha e deixa de 6 a 13 aeroportos sem ida e volta com o resto do país. Cada um é o único acesso de uma sub-rede regional: com Manaus fechado, por exemplo, todo o interior do Amazonas fica isolado.
+
+**Quem mais aumenta as escalas entre capitais são três conectores nacionais.** Só 3 dos 154 fechamentos mudam as escalas entre capitais: Brasília (65 pares passam de 1 para 2 escalas, quase todos com Rio Branco ou Macapá), Galeão (26) e Guarulhos (12). **Nenhum fechamento isolado deixa capitais sem caminho entre si**, e na malha intacta todas as capitais se ligam com no máximo 1 escala.
+
+**Hubs e pontes coincidem só em parte.** Guarulhos, Congonhas, Brasília e Galeão estão entre os 7 maiores em grau e quase não desconectam a malha: são hubs redundantes do núcleo. A betweenness acompanha o dano melhor que o grau. E há dois tipos de aeroporto crítico: os que desconectam a periferia não são os mesmos que alongam as viagens entre capitais.
+
+![Dano do fechamento de cada aeroporto contra grau e betweenness](figures/04_dano_vs_centralidade.png)
+
+![Escalas entre capitais com Brasília fechado](figures/04_capitais_sem_brasilia.png)
+
+### Hipóteses
+
+| Hipótese | Resultado | Evidência principal |
+|---|---|---|
+| **H1** robusta a falhas, frágil a fechamentos direcionados | **confirmada** | 8 ou 9 fechamentos direcionados derrubam a maior SCC abaixo de 50%; aleatoriamente, são precisos 54 |
+| **H2** pontes regionais com grau baixo | **em parte** | no topo, 9 dos 10 maiores em grau e em betweenness coincidem; abaixo dele, Coari, Trombetas, Santarém e Rio Branco (grau 5 a 10) são pontes amazônicas |
+| **H3** adaptativa mais rápida que por grau | **em parte** | nos 7 primeiros fechamentos as duas fecham os mesmos hubs; do 8º em diante a adaptativa fecha Cuiabá (-23 pontos na SCC), Manaus e Belém |
+| **H4** simulação superestima o dano de POA | **confirmada** | a simulação previa -6,5% de eficiência e 6 aeroportos desconectados; na malha real foram -4,4% e 4 |
+
+A malha tem estrutura **núcleo-periferia**: um núcleo de 16 aeroportos (k = 9) e uma periferia de 98 aeroportos nos k-shells 1 e 2. As pontes ficam na **borda do núcleo**, não dentro dele.
+
+![Grau e betweenness, coloridos pela decomposição k-core](figures/02_grau_vs_betweenness.png)
+
+![Primeiros 15 fechamentos por estratégia](figures/03_primeiros_fechamentos.png)
+
+### Porto Alegre: simulação vs realidade
+
+A simulação acertou **quais** aeroportos dependiam do Salgado Filho, e 4 deles (Bagé, Canela, Alegrete e Santa Rosa) de fato perderam todos os voos regulares. Mas não previu a adaptação: Canoas assumiu as ligações com São Paulo, e parte do interior gaúcho foi religada a Florianópolis, Curitiba e Viracopos. Porto Alegre continuou alcançável, mas passou de voo direto para 7 capitais para só 1 (São Paulo).
+
+![Aeroportos do RS e de SC antes e depois do fechamento](figures/05_sul_antes_depois.png)
+
 ## Limitações e próximos passos
+
+**Limitações**
+
+- **Topologia não é demanda.** A rede mede rotas, não passageiros nem assentos. Uma ponte estrutural pode transportar poucas pessoas, e Canoas, com grau 6, tinha muito menos voos que o Salgado Filho.
+- **Análise estática.** As simulações não capturam a reorganização das companhias aéreas. O notebook 05 mede esse erro para Porto Alegre: cerca de um terço do dano previsto não aconteceu.
+- **Janelas e sazonalidade.** A janela pós-fechamento (maio e junho) também difere de abril por fatores sem relação com Porto Alegre, como aeroportos que entraram ou saíram da malha no Nordeste e no Pará.
+- **Conexões terrestres** ficam fora do modelo, e aeroportos próximos (como Canoas e Porto Alegre, ou Navegantes e Florianópolis) se substituem por estrada.
+- **Fechamentos em sequência** (notebook 03) servem para medir a estrutura da malha; fechar dezenas de aeroportos ao mesmo tempo não é um cenário realista.
+
+**Próximos passos**
+
+- **Análise de sensibilidade** do limiar de frequência (0,5 e 2 voos por semana) e da agregação dos aeroportos de São Paulo e do Rio de Janeiro, previstas em `docs/modelagem.md` e ainda não feitas.
+- **Fechamento regional** (subpergunta 4 de `docs/problema.md`): fechar vários aeroportos vizinhos ao mesmo tempo, como numa tempestade regional.
+- **Ponderar por passageiros**, com a base de demanda da ANAC, para medir impacto em pessoas e não só em rotas.
+- **Ferramentas complementares** listadas no fim do notebook 01 (CCDF em log-log e comparação com grafos aleatórios).
 
 ## Referências
 
@@ -83,27 +174,34 @@ Se o download falhar com `CERTIFICATE_VERIFY_FAILED`, o Python em uso não encon
 
 ```
 malha-aerea-grafo/
-├── README.md                  
-├── requirements.txt           
-├── .gitignore
-├── run_all.py                 # reproduz tudo em um comando
+├── README.md
+├── requirements.txt              # dependências com versões fixadas
+├── run_all.py                    # reproduz tudo em um comando
 │
 ├── data/
-│   ├── raw/                   # dados brutos (baixado pelo script)
-│   └── processed/             # rede pronta (.graphml / .csv)
+│   ├── raw/                      # CSVs da VRA (baixados pelo script, não versionados)
+│   └── processed/                # redes prontas: .graphml e CSV de arestas
+│
+├── docs/
+│   ├── problema.md               # problema, pergunta, hipóteses e escopo
+│   └── modelagem.md              # decisões de modelagem e filtros
 │
 ├── scripts/
-│   ├── 01_baixar_vra.py       # obtém os dados da ANAC
-│   └── 02_construir_rede.py   # limpeza, filtro de frequência, grafo
+│   ├── baixar_dados.py           # baixa a VRA de abril a junho de 2024
+│   └── construir_rede.py         # filtra os voos e constrói as redes
 │
-├── src/                       # funções reutilizáveis
-│   ├── rede.py                # montar grafo, agregar aeroportos de SP
-│   ├── metricas.py            # grau, betweenness, eficiência, k-core
-│   └── fechamentos.py         # remoção de nos
+├── src/                          # funções reutilizáveis (sem gráficos nem caminhos fixos)
+│   ├── rede.py                   # leitura da VRA, construção do grafo, capitais
+│   ├── metricas.py               # grau, centralidades, k-core, BFS, eficiência
+│   └── fechamentos.py            # estratégias de fechamento e impacto individual
 │
-├── notebooks/                 # notebooks de analise
+├── notebooks/
+│   ├── 01_descricao_rede.ipynb
+│   ├── 02_hipoteses_e_centralidades.ipynb
+│   ├── 03_curvas_fechamento.ipynb
+│   ├── 04_aeroportos_criticos.ipynb
+│   └── 05_poa_simulado_vs_real.ipynb
 │
-├── figures/                   # tudo gerado pelos notebooks
-└── docs/
+└── figures/                      # 11 figuras, todas geradas pelos notebooks
 ```
 
