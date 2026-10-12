@@ -25,6 +25,37 @@ TIPO_LINHA_DOMESTICA = "N"
 # grupo "Regular" do dicionário da ANAC
 DI_REGULAR = {"0", "4", "C"}
 
+# capitais e os aeroportos que as atendem no modelo principal (docs/modelagem.md)
+CAPITAIS = {
+    "Rio Branco": ["SBRB"],
+    "Maceió": ["SBMO"],
+    "Manaus": ["SBEG"],
+    "Macapá": ["SBMQ"],
+    "Salvador": ["SBSV"],
+    "Fortaleza": ["SBFZ"],
+    "Brasília": ["SBBR"],
+    "Vitória": ["SBVT"],
+    "Goiânia": ["SBGO"],
+    "São Luís": ["SBSL"],
+    "Belo Horizonte": ["SBCF"],
+    "Campo Grande": ["SBCG"],
+    "Cuiabá": ["SBCY"],
+    "Belém": ["SBBE"],
+    "João Pessoa": ["SBJP"],
+    "Recife": ["SBRF"],
+    "Teresina": ["SBTE"],
+    "Curitiba": ["SBCT"],
+    "Rio de Janeiro": ["SBGL", "SBRJ"],
+    "Natal": ["SBSG"],
+    "Porto Velho": ["SBPV"],
+    "Boa Vista": ["SBBV"],
+    "Porto Alegre": ["SBPA"],
+    "Florianópolis": ["SBFL"],
+    "Aracaju": ["SBAR"],
+    "São Paulo": ["SBGR", "SBSP"],
+    "Palmas": ["SBPJ"],
+}
+
 # (início, fim), datas inclusivas, pela data da partida real
 JANELAS = {
     "referencia": ("2024-04-01", "2024-04-30"),

@@ -27,6 +27,12 @@ Fechamentos de aeroportos por eventos climáticos (alagamentos, nevoeiro, tempes
 | Componentes (WCC, SCC) | 4 | `src/metricas.py`, `resumo_rede`; `01_descricao_rede.ipynb`, seção 5 | verificar a conectividade e achar aeroportos alcançáveis só em um sentido |
 | Caminhos, distâncias e diâmetro | 4 | `src/metricas.py`, `resumo_rede`; `01_descricao_rede.ipynb`, seção 5 | medir a linha de base de escalas antes dos fechamentos |
 | Triângulos e clustering | 4 | `src/metricas.py`, `resumo_rede`; `01_descricao_rede.ipynb`, seção 7 | mostrar onde há caminhos alternativos: clustering alto nos aeroportos médios e baixo nos hubs |
+| BFS | 3 | `src/metricas.py`, `escalas_bfs_origem` e `escalas_entre_capitais`; `02_hipoteses_e_centralidades.ipynb`, seção 4 | contar escalas de Natal até cada aeroporto e entre todas as capitais |
+| Caminhos e distâncias | 4 | `src/metricas.py`, `escalas_entre_capitais`; `02_hipoteses_e_centralidades.ipynb`, seção 4 | mostrar que todas as capitais se ligam com no máximo 1 escala e que Brasília liga todas diretamente |
+| Centralidade de betweenness | 4 | `src/metricas.py`, `calcular_centralidades`; `02_hipoteses_e_centralidades.ipynb`, seção 1 | testar H2: identificar pontes (Manaus, Cuiabá e aeroportos amazônicos de grau baixo) |
+| Centralidades de closeness e eigenvector | 4 | `src/metricas.py`, `calcular_centralidades`; `02_hipoteses_e_centralidades.ipynb`, seção 2 | mostrar que proximidade e prestígio acompanham o grau, e só a betweenness destaca as pontes |
+| Eficiência | 4 | `src/metricas.py`, `eficiencia_global_dirigida`; `02_hipoteses_e_centralidades.ipynb`, seção 5 | registrar a linha de base para as simulações de fechamento |
+| k-core, k-shell, core number e degeneracy | 5 | `src/metricas.py`, `analise_kcore`; `02_hipoteses_e_centralidades.ipynb`, seção 3 | confirmar a estrutura núcleo-periferia e mostrar que as pontes ficam na borda do núcleo |
 
 ## Como executar
 

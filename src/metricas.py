@@ -44,17 +44,21 @@ def tabela_graus(G: nx.DiGraph) -> pd.DataFrame:
     )
     return df.sort_values("grau total", ascending=False)
 
+
 def calcular_centralidades(G: nx.DiGraph) -> pd.DataFrame:
     """Calcula Betweenness, Closeness e Eigenvector (Semana 4).
-    
+
     Usado para testar a H2: comparar aeroportos 'Hubs' (Grau) vs 'Pontes' (Betweenness).
     """
     # Betweenness não usa peso, pois queremos caminhos topológicos (voos/escalas)
     betweenness = nx.betweenness_centrality(G, weight=None)
-    closeness = nx.closeness_centrality(G)
-    
-    # Eigenvector precisa de grafo não-dirigido para garantir convergência em alguns casos
+
+    # Closeness e eigenvector no grafo não dirigido (95% das rotas têm volta).
+    # No dirigido, a closeness do networkx mede a distância *até* o aeroporto, e
+    # um aeroporto que só recebe voos (ex.: Iguatu) ficaria com valor alto.
+    # O eigenvector dirigido também não é bem definido fora de uma única SCC.
     U = G.to_undirected()
+    closeness = nx.closeness_centrality(U)
     eigenvector = nx.eigenvector_centrality(U, max_iter=1000)
 
     df = pd.DataFrame({
@@ -66,8 +70,10 @@ def calcular_centralidades(G: nx.DiGraph) -> pd.DataFrame:
 
 
 def analise_kcore(G: nx.DiGraph) -> pd.DataFrame:
-    """Calcula o core number e k-shell (Semana 5).
-    
+    """Calcula o core number de cada aeroporto (Semana 5).
+
+    O k-shell de um aeroporto é o seu core number: o k-shell k reúne os
+    aeroportos com core number exatamente k.
     Responde à Subpergunta 1: Estrutura núcleo-periferia.
     """
     # k-core é tipicamente analisado no grafo subjacente não-dirigido
@@ -98,6 +104,32 @@ def escalas_bfs_origem(G: nx.DiGraph, origem: str) -> pd.DataFrame:
         for dest, dist in distancias.items() if dest != origem
     ])
     return df.sort_values(by="escalas")
+
+
+def escalas_entre_capitais(G: nx.DiGraph, capitais: dict[str, list[str]]) -> pd.DataFrame:
+    """Matriz de escalas entre capitais, calculada por BFS (Semanas 3 e 4).
+
+    `capitais` mapeia o nome da capital para a lista de aeroportos que a atendem.
+    A distância entre duas capitais é a menor entre quaisquer aeroportos delas.
+    Linhas são origens e colunas são destinos. NaN indica que não há caminho
+    (por exemplo, capital sem aeroporto na rede); a diagonal fica em NaN.
+    """
+    nomes = list(capitais)
+    matriz = pd.DataFrame(np.nan, index=nomes, columns=nomes)
+    for origem in nomes:
+        voos = {}
+        for aeroporto in capitais[origem]:
+            if aeroporto not in G:
+                continue
+            for destino, d in nx.single_source_shortest_path_length(G, aeroporto).items():
+                voos[destino] = min(d, voos.get(destino, d))
+        for destino in nomes:
+            if destino == origem:
+                continue
+            alcancaveis = [voos[a] for a in capitais[destino] if a in voos]
+            if alcancaveis:
+                matriz.loc[origem, destino] = min(alcancaveis) - 1
+    return matriz
 
 
 def eficiencia_global_dirigida(G: nx.DiGraph) -> float:
