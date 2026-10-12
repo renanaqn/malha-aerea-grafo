@@ -33,6 +33,9 @@ Fechamentos de aeroportos por eventos climáticos (alagamentos, nevoeiro, tempes
 | Centralidades de closeness e eigenvector | 4 | `src/metricas.py`, `calcular_centralidades`; `02_hipoteses_e_centralidades.ipynb`, seção 2 | mostrar que proximidade e prestígio acompanham o grau, e só a betweenness destaca as pontes |
 | Eficiência | 4 | `src/metricas.py`, `eficiencia_global_dirigida`; `02_hipoteses_e_centralidades.ipynb`, seção 5 | registrar a linha de base para as simulações de fechamento |
 | k-core, k-shell, core number e degeneracy | 5 | `src/metricas.py`, `analise_kcore`; `02_hipoteses_e_centralidades.ipynb`, seção 3 | confirmar a estrutura núcleo-periferia e mostrar que as pontes ficam na borda do núcleo |
+| Componentes (SCC, WCC) sob remoção de nós | 4 | `src/fechamentos.py`, `medir_rede` e `simular_fechamentos`; `03_curvas_fechamento.ipynb`, seções 2 a 4 | medir quanto a malha se desconecta a cada fechamento (H1 e H3) |
+| Eficiência sob remoção de nós | 4 | `src/fechamentos.py`, `medir_rede`; `src/metricas.py`, `eficiencia_global_dirigida`; `03_curvas_fechamento.ipynb`, seções 2 e 3 | medir o alongamento dos caminhos a cada fechamento, normalizado pela rede original |
+| Grau e betweenness como critério de fechamento | 2 e 4 | `src/fechamentos.py`, `ordem_por_grau`, `ordem_por_betweenness` e `fechamento_adaptativo`; `03_curvas_fechamento.ipynb`, seção 4 | comparar fechamentos direcionados por hubs, por pontes e adaptativos (betweenness recalculada) |
 
 ## Como executar
 
@@ -60,6 +63,9 @@ Se o download falhar com `CERTIFICATE_VERIFY_FAILED`, o Python em uso não encon
 ## Limitações e próximos passos
 
 ## Referências
+
+- ALBERT, R.; JEONG, H.; BARABÁSI, A.-L. Error and attack tolerance of complex networks. *Nature*, v. 406, p. 378-382, 2000. Base das estratégias de fechamento aleatório e direcionado (`src/fechamentos.py`).
+- AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL (ANAC). Voo Regular Ativo (VRA). Dados abertos. Disponível em: https://siros.anac.gov.br/siros/registros/diversos/vra/.
 
 ## Estruturação do repositório
 
