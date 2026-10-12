@@ -55,12 +55,18 @@ py -3.13 -m venv .venv            # Linux/macOS: python3.13 -m venv .venv
 # instalar as dependências
 pip install -r requirements.txt
 
-# baixar os dados da ANAC (cerca de 75 MB, vão para data/raw/)
-python scripts/baixar_dados.py
-
-# construir a rede
-python scripts/construir_rede.py
+# reproduzir tudo: dados, redes, notebooks e figuras (cerca de 2 minutos)
+python run_all.py
 ```
+
+O `run_all.py` executa, em ordem:
+
+1. `scripts/baixar_dados.py`: baixa os dados da VRA de abril a junho de 2024 (cerca de 75 MB, para `data/raw/`). Meses já baixados são pulados; use `python run_all.py --forcar-download` para baixar de novo.
+2. `scripts/construir_rede.py`: constrói as redes de referência e pós-fechamento em `data/processed/`.
+3. Os notebooks `01` a `05` em `notebooks/`, gravando as saídas neles.
+4. Confere se as 11 figuras foram geradas em `figures/`.
+
+Todos os sorteios usam seed fixa, e duas execuções seguidas produzem notebooks e figuras idênticos. As etapas também podem ser rodadas separadamente (`python scripts/baixar_dados.py`, `python scripts/construir_rede.py` e os notebooks no Jupyter).
 
 Se o download falhar com `CERTIFICATE_VERIFY_FAILED`, o Python em uso não encontra os certificados raiz do sistema (acontece, por exemplo, com o Python do MSYS2). Crie o `.venv` com o Python do python.org.
 
