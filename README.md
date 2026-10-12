@@ -36,6 +36,9 @@ Fechamentos de aeroportos por eventos climáticos (alagamentos, nevoeiro, tempes
 | Componentes (SCC, WCC) sob remoção de nós | 4 | `src/fechamentos.py`, `medir_rede` e `simular_fechamentos`; `03_curvas_fechamento.ipynb`, seções 2 a 4 | medir quanto a malha se desconecta a cada fechamento (H1 e H3) |
 | Eficiência sob remoção de nós | 4 | `src/fechamentos.py`, `medir_rede`; `src/metricas.py`, `eficiencia_global_dirigida`; `03_curvas_fechamento.ipynb`, seções 2 e 3 | medir o alongamento dos caminhos a cada fechamento, normalizado pela rede original |
 | Grau e betweenness como critério de fechamento | 2 e 4 | `src/fechamentos.py`, `ordem_por_grau`, `ordem_por_betweenness` e `fechamento_adaptativo`; `03_curvas_fechamento.ipynb`, seção 4 | comparar fechamentos direcionados por hubs, por pontes e adaptativos (betweenness recalculada) |
+| Componentes (SCC) e eficiência no fechamento de um único aeroporto | 4 | `src/fechamentos.py`, `impacto_individual`; `04_aeroportos_criticos.ipynb`, seções 1 e 2 | responder quais aeroportos mais desconectam a malha (Confins, Manaus, Viracopos, Recife, Belém, Cuiabá, Porto Alegre) |
+| BFS, caminhos e distâncias entre capitais com um aeroporto fechado | 3 e 4 | `src/fechamentos.py`, `impacto_individual`; `04_aeroportos_criticos.ipynb`, seções 3 e 5 | responder quais fechamentos mais aumentam escalas entre capitais (Brasília, Galeão, Guarulhos) e o efeito para Natal |
+| Grau, betweenness e k-core como preditores de dano | 2, 4 e 5 | `04_aeroportos_criticos.ipynb`, seção 4 | mostrar que hubs redundantes do núcleo causam pouco dano e que a betweenness acompanha melhor o impacto |
 
 ## Como executar
 
