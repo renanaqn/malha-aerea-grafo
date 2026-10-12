@@ -39,6 +39,9 @@ Fechamentos de aeroportos por eventos climáticos (alagamentos, nevoeiro, tempes
 | Componentes (SCC) e eficiência no fechamento de um único aeroporto | 4 | `src/fechamentos.py`, `impacto_individual`; `04_aeroportos_criticos.ipynb`, seções 1 e 2 | responder quais aeroportos mais desconectam a malha (Confins, Manaus, Viracopos, Recife, Belém, Cuiabá, Porto Alegre) |
 | BFS, caminhos e distâncias entre capitais com um aeroporto fechado | 3 e 4 | `src/fechamentos.py`, `impacto_individual`; `04_aeroportos_criticos.ipynb`, seções 3 e 5 | responder quais fechamentos mais aumentam escalas entre capitais (Brasília, Galeão, Guarulhos) e o efeito para Natal |
 | Grau, betweenness e k-core como preditores de dano | 2, 4 e 5 | `04_aeroportos_criticos.ipynb`, seção 4 | mostrar que hubs redundantes do núcleo causam pouco dano e que a betweenness acompanha melhor o impacto |
+| Eficiência e componentes (SCC) sobre uma base comum de aeroportos | 4 | `src/metricas.py`, `eficiencia_entre` e `fracao_na_maior_scc`; `05_poa_simulado_vs_real.ipynb`, seção 2 | comparar de forma justa a simulação do fechamento de POA com a malha real (H4) |
+| Subredes e grau | 2 | `05_poa_simulado_vs_real.ipynb`, seções 3 e 4 | mostrar como a sub-rede do RS e de SC se reorganizou (Canoas, Florianópolis, Viracopos) |
+| BFS, caminhos e distâncias entre capitais na malha real | 3 e 4 | `src/metricas.py`, `escalas_entre_capitais`; `05_poa_simulado_vs_real.ipynb`, seção 5 | medir a perda de ligações diretas de Porto Alegre com as outras capitais |
 
 ## Como executar
 
