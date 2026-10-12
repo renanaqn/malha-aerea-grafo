@@ -155,3 +155,25 @@ def eficiencia_global_dirigida(G: nx.DiGraph, n_referencia: int | None = None) -
                 soma_inv_dist += 1.0 / dist
                 
     return soma_inv_dist / (n * (n - 1))
+
+
+def eficiencia_entre(G: nx.DiGraph, nos: set[str]) -> float:
+    """Eficiência média só entre os pares de `nos` (Semana 4).
+
+    Os caminhos podem passar por qualquer aeroporto de G, mas só os pares de
+    `nos` entram na média. Um aeroporto de `nos` que não está em G conta como
+    isolado (1/d = 0). Serve para comparar redes com conjuntos de aeroportos
+    diferentes sobre a mesma base de pares.
+    """
+    nos = set(nos)
+    soma = 0.0
+    for u in nos & set(G):
+        dist = nx.single_source_shortest_path_length(G, u)
+        soma += sum(1.0 / d for v, d in dist.items() if v != u and v in nos)
+    return soma / (len(nos) * (len(nos) - 1))
+
+
+def fracao_na_maior_scc(G: nx.DiGraph, nos: set[str]) -> float:
+    """Fração de `nos` que está na maior componente fortemente conexa de G (Semana 4)."""
+    maior = max(nx.strongly_connected_components(G), key=len)
+    return len(maior & set(nos)) / len(nos)
