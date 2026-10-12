@@ -15,7 +15,7 @@ import networkx as nx
 import numpy as np
 import pandas as pd
 
-from metricas import eficiencia_global_dirigida
+from metricas import eficiencia_global_dirigida, escalas_entre_capitais
 
 
 def medir_rede(G: nx.DiGraph, n_ref: int) -> dict:
@@ -123,3 +123,47 @@ def fechados_ate(curva: pd.DataFrame, medida: str, limite: float) -> int | None:
     """
     abaixo = curva[curva[medida] < limite]
     return int(abaixo["fechados"].min()) if len(abaixo) else None
+
+
+def impacto_individual(G: nx.DiGraph, capitais: dict[str, list[str]]) -> pd.DataFrame:
+    """Fecha cada aeroporto sozinho (os demais abertos) e mede o impacto.
+
+    Colunas, uma linha por aeroporto fechado:
+        perda de eficiência (%)      queda da eficiência global, com o n original
+        aeroportos fora da SCC       outros aeroportos que saem da maior SCC, isto é,
+                                     perdem a ida e volta com o resto da malha
+        capital sem aeroporto        capital que fica sem nenhum aeroporto na rede
+        pares de capitais sem caminho, pares de capitais com mais escalas,
+        escalas a mais entre capitais
+                                     comparação com a rede intacta, só entre as
+                                     capitais que continuam com aeroporto
+    """
+    n_ref = len(G)
+    ef_intacta = eficiencia_global_dirigida(G)
+    scc_intacta = max(nx.strongly_connected_components(G), key=len)
+    escalas_intacta = escalas_entre_capitais(G, capitais)
+
+    linhas = []
+    for aeroporto in sorted(G):
+        H = G.copy()
+        H.remove_node(aeroporto)
+        restantes = {c: [a for a in aeroportos if a != aeroporto] for c, aeroportos in capitais.items()}
+        sem_aeroporto = [c for c, aeroportos in restantes.items() if not aeroportos]
+        restantes = {c: aeroportos for c, aeroportos in restantes.items() if aeroportos}
+
+        antes = escalas_intacta.loc[list(restantes), list(restantes)]
+        depois = escalas_entre_capitais(H, restantes)
+        tinha_caminho = antes.notna()
+        aumento = (depois - antes)[tinha_caminho & depois.notna()]
+        maior_scc = len(max(nx.strongly_connected_components(H), key=len))
+
+        linhas.append({
+            "aeroporto": aeroporto,
+            "perda de eficiência (%)": 100 * (1 - eficiencia_global_dirigida(H, n_referencia=n_ref) / ef_intacta),
+            "aeroportos fora da SCC": len(scc_intacta) - maior_scc - (aeroporto in scc_intacta),
+            "capital sem aeroporto": ", ".join(sem_aeroporto),
+            "pares de capitais sem caminho": int((depois.isna() & tinha_caminho).sum().sum()),
+            "pares de capitais com mais escalas": int((aumento > 0).sum().sum()),
+            "escalas a mais entre capitais": float(aumento.sum().sum()),
+        })
+    return pd.DataFrame(linhas).set_index("aeroporto")
