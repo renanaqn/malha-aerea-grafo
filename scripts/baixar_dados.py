@@ -11,9 +11,12 @@ Uso:
 
 import argparse
 import shutil
+import ssl
 import sys
 import urllib.request
 from pathlib import Path
+
+import certifi
 
 URL_BASE = "https://siros.anac.gov.br/siros/registros/diversos/vra/{ano}/VRA_{ano}_{mes:02d}.csv"
 
@@ -51,9 +54,11 @@ def baixar_mes(ano: int, mes: int, forcar: bool = False) -> Path:
     url = URL_BASE.format(ano=ano, mes=mes)
     temporario = destino.with_suffix(".part")
     print(f"[..] baixando {url}")
-    # se der CERTIFICATE_VERIFY_FAILED, o problema é o Python local sem certificados raiz
-    # (ex.: Python do MSYS2). Use um .venv criado com o Python do python.org.
-    with urllib.request.urlopen(url, timeout=120) as resposta, open(temporario, "wb") as f:
+    # usa o bundle do certifi em vez do repositório do sistema: no Windows o Python lê o
+    # repositório do sistema, que pode ter uma cópia vencida da cadeia do Let's Encrypt
+    # (CERTIFICATE_VERIFY_FAILED: certificate has expired)
+    contexto = ssl.create_default_context(cafile=certifi.where())
+    with urllib.request.urlopen(url, timeout=120, context=contexto) as resposta, open(temporario, "wb") as f:
         shutil.copyfileobj(resposta, f)
 
     # só substitui o arquivo final se o download terminou e o formato confere
