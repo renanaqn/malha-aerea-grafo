@@ -5,7 +5,7 @@ Projeto da Unidade 1 de Algoritmos e Estrutura de Dados II (DCA/UFRN), prof. Iva
 Quais aeroportos brasileiros, se fechados, mais desconectam a malha aérea doméstica ou mais aumentam as escalas entre as capitais? Modelamos a malha regular de 2024 como um grafo, simulamos fechamentos e comparamos a simulação com o fechamento real do Aeroporto Salgado Filho (Porto Alegre) nas enchentes de maio de 2024.
 
 ## Integrantes
-Marcelo · Renan de Aquino Pereira
+Marcelo dos Santos Vieira · Renan de Aquino Pereira
 
 ## Vídeo
 
