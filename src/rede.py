@@ -136,6 +136,30 @@ def arestas_para_df(G: nx.DiGraph) -> pd.DataFrame:
     return df[["origem", "destino", "voos", "weight"]].sort_values("weight", ascending=False, ignore_index=True)
 
 
+def adicionar_coordenadas(G: nx.DiGraph, caminho_aeroportos: Path) -> list[str]:
+    """Grava `lat` e `lon` em cada nó, a partir do CSV de aeroportos do OurAirports.
+
+    O código ICAO pode estar em qualquer uma das colunas ident, gps_code ou
+    icao_code; procuramos nas três, só entre aeroportos brasileiros.
+    Devolve os aeroportos de G sem coordenada encontrada.
+    """
+    colunas = ["ident", "gps_code", "icao_code", "iso_country", "latitude_deg", "longitude_deg"]
+    aeroportos = pd.read_csv(caminho_aeroportos, usecols=colunas, low_memory=False)
+    aeroportos = aeroportos[aeroportos["iso_country"] == "BR"]
+    coordenadas = {}
+    for coluna in ["ident", "gps_code", "icao_code"]:
+        validos = aeroportos.dropna(subset=[coluna])
+        coordenadas.update(zip(validos[coluna], zip(validos["latitude_deg"], validos["longitude_deg"])))
+
+    sem_coordenada = []
+    for n in G:
+        if n in coordenadas:
+            G.nodes[n]["lat"], G.nodes[n]["lon"] = (float(x) for x in coordenadas[n])
+        else:
+            sem_coordenada.append(n)
+    return sem_coordenada
+
+
 def carregar_grafo(caminho: Path) -> nx.DiGraph:
     """Carrega um grafo salvo em GraphML por scripts/construir_rede.py."""
     return nx.read_graphml(caminho)

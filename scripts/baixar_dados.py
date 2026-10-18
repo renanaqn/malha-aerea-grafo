@@ -1,8 +1,11 @@
-"""Baixa os arquivos mensais da base VRA (Voo Regular Ativo) da ANAC.
+"""Baixa os dados do projeto para data/raw/.
 
-Fonte: https://siros.anac.gov.br/siros/registros/diversos/vra/
-Formato conferido em 01/10/2026: um CSV por mês (VRA_AAAA_MM.csv), UTF-8,
-separador ";", uma linha por voo.
+VRA (Voo Regular Ativo), da ANAC: https://siros.anac.gov.br/siros/registros/diversos/vra/
+    Formato conferido em 01/10/2026: um CSV por mês (VRA_AAAA_MM.csv), UTF-8,
+    separador ";", uma linha por voo.
+
+Coordenadas dos aeroportos, do OurAirports (dados abertos): https://ourairports.com/data/
+    Usadas só para desenhar o grafo no mapa; a VRA não traz latitude e longitude.
 
 Uso:
     python scripts/baixar_dados.py            # baixa os meses do projeto
@@ -19,6 +22,9 @@ from pathlib import Path
 import certifi
 
 URL_BASE = "https://siros.anac.gov.br/siros/registros/diversos/vra/{ano}/VRA_{ano}_{mes:02d}.csv"
+URL_AEROPORTOS = "https://davidmegginson.github.io/ourairports-data/airports.csv"
+ARQUIVO_AEROPORTOS = "ourairports_airports.csv"
+COLUNAS_AEROPORTOS = ["ident", "icao_code", "gps_code", "iso_country", "latitude_deg", "longitude_deg"]
 
 # abril/2024: referência, antes do fechamento de POA (03/05/2024)
 # maio e junho/2024: malha real com POA fechado
@@ -36,22 +42,31 @@ RAIZ = Path(__file__).resolve().parents[1]
 PASTA_DESTINO = RAIZ / "data" / "raw"
 
 
-def conferir_cabecalho(caminho: Path) -> None:
-    """Falha se o arquivo não tiver as colunas que o parser usa."""
+def conferir_cabecalho(caminho: Path, colunas: list[str] = COLUNAS_ESPERADAS, separador: str = ";") -> None:
+    """Falha se o arquivo não tiver as colunas que o código usa."""
     with open(caminho, encoding="utf-8") as f:
-        cabecalho = f.readline().strip().split(";")
-    faltando = [c for c in COLUNAS_ESPERADAS if c not in cabecalho]
+        cabecalho = [c.strip('"') for c in f.readline().strip().split(separador)]
+    faltando = [c for c in colunas if c not in cabecalho]
     if faltando:
-        raise ValueError(f"{caminho.name}: colunas ausentes {faltando}. Verificar formato da VRA")
+        raise ValueError(f"{caminho.name}: colunas ausentes {faltando}. O formato do arquivo mudou?")
 
 
 def baixar_mes(ano: int, mes: int, forcar: bool = False) -> Path:
     destino = PASTA_DESTINO / f"VRA_{ano}_{mes:02d}.csv"
+    return baixar_arquivo(URL_BASE.format(ano=ano, mes=mes), destino, forcar, conferir_cabecalho)
+
+
+def baixar_aeroportos(forcar: bool = False) -> Path:
+    destino = PASTA_DESTINO / ARQUIVO_AEROPORTOS
+    return baixar_arquivo(URL_AEROPORTOS, destino, forcar,
+                          lambda c: conferir_cabecalho(c, COLUNAS_AEROPORTOS, ","))
+
+
+def baixar_arquivo(url: str, destino: Path, forcar: bool, conferir) -> Path:
     if destino.exists() and not forcar:
         print(f"[ok] {destino.name} já existe, pulando")
         return destino
 
-    url = URL_BASE.format(ano=ano, mes=mes)
     temporario = destino.with_suffix(".part")
     print(f"[..] baixando {url}")
     # usa o bundle do certifi em vez do repositório do sistema: no Windows o Python lê o
@@ -62,7 +77,7 @@ def baixar_mes(ano: int, mes: int, forcar: bool = False) -> Path:
         shutil.copyfileobj(resposta, f)
 
     # só substitui o arquivo final se o download terminou e o formato confere
-    conferir_cabecalho(temporario)
+    conferir(temporario)
     temporario.replace(destino)
     print(f"[ok] {destino.name} ({destino.stat().st_size / 1e6:.1f} MB)")
     return destino
@@ -76,6 +91,7 @@ def main() -> int:
     PASTA_DESTINO.mkdir(parents=True, exist_ok=True)
     for ano, mes in MESES:
         baixar_mes(ano, mes, forcar=args.forcar)
+    baixar_aeroportos(forcar=args.forcar)
     return 0
 
 

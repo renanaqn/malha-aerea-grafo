@@ -1,7 +1,7 @@
 """Constrói a rede de aeroportos a partir dos CSVs da VRA e salva em data/processed/.
 
 Gera, para cada janela (referencia e pos_fechamento):
-    rede_<janela>.graphml   grafo completo, com atributos (para os notebooks)
+    rede_<janela>.graphml   grafo completo, com atributos e coordenadas (para os notebooks)
     arestas_<janela>.csv    lista de rotas (para conferência)
 
 Uso:
@@ -17,16 +17,17 @@ import networkx as nx
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "src"))
 
-from rede import JANELAS, arestas_para_df, construir_grafo, ler_voos_vra  # noqa: E402
+from rede import JANELAS, adicionar_coordenadas, arestas_para_df, construir_grafo, ler_voos_vra  # noqa: E402
 
 PASTA_DADOS = RAIZ / "data" / "raw"
 PASTA_SAIDA = RAIZ / "data" / "processed"
 ARQUIVOS = ["VRA_2024_04.csv", "VRA_2024_05.csv", "VRA_2024_06.csv"]
+ARQUIVO_AEROPORTOS = "ourairports_airports.csv"
 
 
 def main() -> int:
     caminhos = [PASTA_DADOS / nome for nome in ARQUIVOS]
-    faltando = [c for c in caminhos if not c.exists()]
+    faltando = [c for c in caminhos + [PASTA_DADOS / ARQUIVO_AEROPORTOS] if not c.exists()]
     if faltando:
         print(f"Arquivos não encontrados: {[c.name for c in faltando]}. Execute primeiro scripts/baixar_dados.py")
         return 1
@@ -37,6 +38,9 @@ def main() -> int:
     PASTA_SAIDA.mkdir(parents=True, exist_ok=True)
     for nome, (inicio, fim) in JANELAS.items():
         G = construir_grafo(voos, inicio, fim)
+        sem_coordenada = adicionar_coordenadas(G, PASTA_DADOS / ARQUIVO_AEROPORTOS)
+        if sem_coordenada:
+            print(f"[aviso] aeroportos sem coordenada no OurAirports: {sem_coordenada}")
         nx.write_graphml(G, PASTA_SAIDA / f"rede_{nome}.graphml")
         arestas_para_df(G).to_csv(PASTA_SAIDA / f"arestas_{nome}.csv", index=False, float_format="%.2f")
 
