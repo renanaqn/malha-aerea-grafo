@@ -29,7 +29,8 @@ Contexto, subperguntas, critérios de refutação de cada hipótese e escopo est
 - **Fonte:** base VRA (Voo Regular Ativo) da ANAC, dados abertos, um CSV por mês ([portal](https://siros.anac.gov.br/siros/registros/diversos/vra/)). Cada linha é um voo, com origem, destino, empresa, horários previstos e reais, situação (realizado ou cancelado) e tipo de linha.
 - **Período:** abril, maio e junho de 2024 (cerca de 80 mil voos por mês, nacionais e internacionais).
 - **Filtros:** só voos **realizados**, **domésticos de passageiros** (tipo de linha `N`) e **regulares** (DI `0`, `4` ou `C`, conforme o dicionário da ANAC). Restam **183.029 voos**.
-- **Obtenção:** `scripts/baixar_dados.py` baixa os arquivos para `data/raw/` (não versionado). As redes prontas ficam em `data/processed/` (versionado), em GraphML e em CSV de arestas.
+- **Coordenadas dos aeroportos:** a VRA não traz latitude e longitude. Para desenhar o grafo no mapa, usamos a base aberta do [OurAirports](https://ourairports.com/data/), que cobre os 159 aeroportos das duas redes. As coordenadas só servem para a visualização; nenhuma métrica depende delas.
+- **Obtenção:** `scripts/baixar_dados.py` baixa a VRA e o OurAirports para `data/raw/` (não versionado). As redes prontas ficam em `data/processed/` (versionado), em GraphML e em CSV de arestas.
 
 Detalhes e justificativas dos filtros: [`docs/modelagem.md`](docs/modelagem.md), seção 2.
 
@@ -94,10 +95,10 @@ python run_all.py
 
 O `run_all.py` executa, em ordem:
 
-1. `scripts/baixar_dados.py`: baixa os dados da VRA de abril a junho de 2024 (cerca de 75 MB, para `data/raw/`). Meses já baixados são pulados; use `python run_all.py --forcar-download` para baixar de novo.
+1. `scripts/baixar_dados.py`: baixa os dados da VRA de abril a junho de 2024 e as coordenadas do OurAirports (cerca de 90 MB, para `data/raw/`). Meses já baixados são pulados; use `python run_all.py --forcar-download` para baixar de novo.
 2. `scripts/construir_rede.py`: constrói as redes de referência e pós-fechamento em `data/processed/`.
 3. Os notebooks `01` a `05` em `notebooks/`, gravando as saídas neles.
-4. Confere se as 11 figuras foram geradas em `figures/`.
+4. Confere se as 13 figuras foram geradas em `figures/`.
 
 Todos os sorteios usam seed fixa, e duas execuções seguidas produzem notebooks e figuras idênticos. As etapas também podem ser rodadas separadamente (`python scripts/baixar_dados.py`, `python scripts/construir_rede.py` e os notebooks no Jupyter).
 
@@ -106,6 +107,8 @@ Se o download falhar com `CERTIFICATE_VERIFY_FAILED`, o Python em uso não encon
 ## Resultados
 
 Cada notebook termina com a interpretação completa. Aqui está o resumo.
+
+![Malha aérea doméstica regular em abril de 2024, com cada aeroporto na sua posição geográfica](figures/01_mapa_rede.png)
 
 | Notebook | O que responde |
 |---|---|
@@ -146,7 +149,7 @@ A malha tem estrutura **núcleo-periferia**: um núcleo de 16 aeroportos (k = 9)
 
 A simulação acertou **quais** aeroportos dependiam do Salgado Filho, e 4 deles (Bagé, Canela, Alegrete e Santa Rosa) de fato perderam todos os voos regulares. Mas não previu a adaptação: Canoas assumiu as ligações com São Paulo, e parte do interior gaúcho foi religada a Florianópolis, Curitiba e Viracopos. Porto Alegre continuou alcançável, mas passou de voo direto para 7 capitais para só 1 (São Paulo).
 
-![Aeroportos do RS e de SC antes e depois do fechamento](figures/05_sul_antes_depois.png)
+![Sul e Sudeste antes e depois do fechamento do Salgado Filho](figures/05_mapa_antes_depois.png)
 
 ## Limitações e próximos passos
 
@@ -169,6 +172,7 @@ A simulação acertou **quais** aeroportos dependiam do Salgado Filho, e 4 deles
 
 - ALBERT, R.; JEONG, H.; BARABÁSI, A.-L. Error and attack tolerance of complex networks. *Nature*, v. 406, p. 378-382, 2000. Base das estratégias de fechamento aleatório e direcionado (`src/fechamentos.py`).
 - AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL (ANAC). Voo Regular Ativo (VRA). Dados abertos. Disponível em: https://siros.anac.gov.br/siros/registros/diversos/vra/.
+- OURAIRPORTS. Airports data. Dados abertos (domínio público). Disponível em: https://ourairports.com/data/. Usado só para as coordenadas dos aeroportos nos mapas.
 
 ## Estruturação do repositório
 
@@ -187,7 +191,7 @@ malha-aerea-grafo/
 │   └── modelagem.md              # decisões de modelagem e filtros
 │
 ├── scripts/
-│   ├── baixar_dados.py           # baixa a VRA de abril a junho de 2024
+│   ├── baixar_dados.py           # baixa a VRA (abril a junho de 2024) e o OurAirports
 │   └── construir_rede.py         # filtra os voos e constrói as redes
 │
 ├── src/                          # funções reutilizáveis (sem gráficos nem caminhos fixos)
@@ -202,6 +206,6 @@ malha-aerea-grafo/
 │   ├── 04_aeroportos_criticos.ipynb
 │   └── 05_poa_simulado_vs_real.ipynb
 │
-└── figures/                      # 11 figuras, todas geradas pelos notebooks
+└── figures/                      # 13 figuras, todas geradas pelos notebooks
 ```
 

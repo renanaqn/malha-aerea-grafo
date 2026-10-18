@@ -38,6 +38,7 @@ NOTEBOOKS = [
 FIGURAS = [
     "01_distribuicao_grau.png",
     "01_matriz_adjacencia.png",
+    "01_mapa_rede.png",
     "02_grau_vs_betweenness.png",
     "02_kshells.png",
     "02_escalas_capitais.png",
@@ -47,6 +48,7 @@ FIGURAS = [
     "04_capitais_sem_brasilia.png",
     "05_simulado_vs_real.png",
     "05_sul_antes_depois.png",
+    "05_mapa_antes_depois.png",
 ]
 
 
