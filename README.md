@@ -1,4 +1,4 @@
-# Estudo da Malha Aérea do Brasil
+# Análise da Robustez da Malha Aérea do Brasil
 
 Projeto da Unidade 1 de Algoritmos e Estrutura de Dados II (DCA/UFRN), prof. Ivanovitch Silva.
 
@@ -8,6 +8,8 @@ Quais aeroportos brasileiros, se fechados, mais desconectam a malha aérea domé
 Marcelo dos Santos Vieira · Renan de Aquino Pereira
 
 ## Vídeo
+
+Link do [Vídeo no YouTube](https://youtu.be/POWDdO5Z2bM)
 
 ## Problema e Pergunta
 
